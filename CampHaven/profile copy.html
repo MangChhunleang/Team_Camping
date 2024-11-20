@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-white ml-0 text-black mx-8">
+    <!-- Header -->
+    <header
+      class="bg-white fixed top-0 w-full flex justify-between items-center border-b-2 border-black py-3 left-0"
+    >
+      <!-- Logo -->
+      <div class="relative flex items-center space-x-4 mx-2">
+        <a href="#">
+          <div class="flex items-center space-x-2">
+            <img
+              src="assets/images/logo.jpg"
+              alt="Logo"
+              class="w-16 h-15 rounded-full"
+            />
+            <span class="text-left">The Camp Store</span>
+          </div>
+        </a>
+        <div class="relative">
+          <input
+            type="text"
+            placeholder="Search products"
+            class="border-2 border-black rounded-md py-1.5 pl-10 pr-20 bg-white text-black text-sm"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute left-2 top-2"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#51725e"
+          >
+            <path
+              d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="flex items-center space-x-8 text-lg mx-2">
+        <a href="./home.html" class="hover:text-[#0963FF]">Home</a>
+        <a href="#" class="hover:text-[#0963FF]">Product</a>
+        <a href="./about.html" class="hover:text-[#0963FF]">About</a>
+
+        <img
+          id="profileImage"
+          src="assets/images/John_Cena_2024.jpg"
+          alt="User"
+          class="w-10 h-10 rounded-full"
+        />
+
+        <div
+          id="profilePopup"
+          class="hidden absolute top-20 bg-white rounded-lg w-64"
+        >
+          <div
+            class="w-[280px] bg-white text-black border border-black rounded-lg p-6 flex flex-col items-center"
+          >
+            <!-- Profile Picture -->
+            <div
+              class="w-16 h-16 border-2 border-black rounded-full flex items-center justify-center text-black text-lg font-bold"
+            >
+              <img
+                src="assets/images/John_Cena_2024.jpg"
+                alt="User"
+                class="w-10 h-10 rounded-full"
+              />
+            </div>
+
+            <!-- Name and Email -->
+            <h1 class="mt-4 text-lg font-semibold text-black">Jonh Cena</h1>
+            <p class="text-sm text-black mt-1">jonhcena@gmail.com</p>
+
+            <!-- Divider -->
+            <div class="w-full border-t border-black my-4"></div>
+
+            <!-- Purchase History -->
+            <a
+              href="./order.html"
+              class="w-full text-left text-sm text-black mb-2 font-medium hover:underline"
+            >
+              Purchase History
+            </a>
+
+            <!-- Divider -->
+            <div class="w-full border-t border-black my-4"></div>
+
+            <!-- My sports profile with external link icon -->
+            <a
+              href="./profile.html"
+              class="w-full flex justify-between items-center text-sm text-black font-medium hover:underline"
+            >
+              <span>My profile</span>
+              <i class="fas fa-external-link-alt text-black"></i>
+            </a>
+
+            <!-- Divider -->
+            <div class="w-full border-t border-black my-4"></div>
+
+            <!-- Sign Out Button -->
+            <a href="./home2.html">
+              <button
+                class="mt-2 px-4 py-2 bg-[#0963FF] text-black font-semibold border border-black rounded-md hover:bg-[#a0e9df]"
+              >
+                Sign out
+              </button>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="flex w-[1500px] mr-36 bg-white text-black mt-24">
+      <!-- Left Sidebar -->
+      <div class="w-2/5 bg-white bg-opacity-5 text-black">
+        <div class="bg-white p-6 py-4 rounded-md border-2 border-black w-full">
+          <div class="flex items-center space-x-4 mb-6">
+            <div class="">
+              <img
+                class="w-14 h-14 rounded-full flex items-center justify-center font-bold"
+                src="assets/images/John_Cena_2024.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h2 class="text-sm font-semibold">John Cena</h2>
+              <p class="text-xs">MEMBER ACCOUNT NO: 2094137423380</p>
+            </div>
+          </div>
+        </div>
+
+        <nav class="space-y-4 ml-8 mt-8">
+          <a
+            href="./profile.html"
+            class="flex items-center text-black space-x-2"
+          >
+            <i class="fas fa-user-circle"></i>
+            <span>My profile</span>
+          </a>
+
+          <a href="./order.html" class="flex items-center text-black space-x-2">
+            <i class="fas fa-shopping-cart"></i>
+            <span>My purchase history</span>
+          </a>
+        </nav>
+        <a href="login.html">
+          <button
+            class="text-black bg-white bg-opacity-100 border-2 border-black hover:bg-blue-700 font-medium rounded-md px-4 py-2 text-sm ml-8 mt-80"
+          >
+            Logout
+          </button>
+        </a>
+      </div>
+      <div class="bg-white w-32"></div>
+      <!-- Main Content -->
+      <div class="w-3/4 bg-white bg-opacity-5 p-8">
+        <button class="pb-4 text-black shadow-sm p-4 shadow-black opacity-100">
+          My orders
+        </button>
+        <div
+          class="border-b flex items-center space-x-6 text-sm font-medium mt-2"
+        ></div>
+      </div>
+    </div>
+
+    <script>
+      const profileImage = document.getElementById("profileImage");
+      const profilePopup = document.getElementById("profilePopup");
+
+      profileImage.addEventListener("click", () => {
+        profilePopup.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

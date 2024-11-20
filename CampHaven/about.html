@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Raleway", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-black mx-8">
+    <!-- Header -->
+    <header
+      class="bg-gray-200 fixed top-0 w-full flex justify-between items-center border-b-2 border-black py-3 left-0"
+    >
+      <!-- Logo -->
+      <div class="relative flex items-center space-x-4 mx-2">
+        <a href="#">
+          <div class="flex items-center space-x-2">
+            <!-- <img
+              src="assets/images/logo.jpg"
+              alt="Logo"
+              class="w-16 h-15 rounded-full"
+            /> -->
+            <span class="text-[#0963FF] text-xl font-bold">Camp Haven</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="flex items-center space-x-8 text-lg mx-2">
+        <a href="./home.html" class="hover:text-[#0963FF]">Home</a>
+        <a href="./products.html" class="hover:text-[#0963FF]">Product</a>
+        <a
+          href="#"
+          class="hover:text-[#0963FF] underline underline-offset-8 decoration-[#51725e]"
+          >About</a
+        >
+
+        <img
+          id="profileImage"
+          src="assets/images/John_Cena_2024.jpg"
+          alt="User"
+          class="w-10 h-10 rounded-full"
+        />
+
+        <div
+          id="profilePopup"
+          class="hidden absolute top-20 bg-white rounded-lg w-64"
+        >
+          <div
+            class="w-[280px] bg-white text-black border border-black rounded-lg p-6 flex flex-col items-center"
+          >
+            <!-- Profile Picture -->
+            <div
+              class="w-16 h-16 border-2 border-black rounded-full flex items-center justify-center text-black text-lg font-bold"
+            >
+              <img
+                src="assets/images/John_Cena_2024.jpg"
+                alt="User"
+                class="w-10 h-10 rounded-full"
+              />
+            </div>
+
+            <!-- Name and Email -->
+            <h1 class="mt-4 text-lg font-semibold text-black">Jonh Cena</h1>
+            <p class="text-sm text-black mt-1">jonhcena@gmail.com</p>
+
+            <!-- Divider -->
+            <div class="w-full border-t border-black my-4"></div>
+
+            <!-- Purchase History -->
+            <a
+              href="./order.html"
+              class="w-full text-left text-sm text-black mb-2 font-medium hover:text-[#0963FF] hover:underline"
+            >
+              Purchase History
+            </a>
+
+            <!-- Divider -->
+            <div class="w-full border-t border-black my-4"></div>
+
+            <!-- My sports profile with external link icon -->
+            <a
+              href="./profile.html"
+              class="w-full flex justify-between items-center text-sm text-black font-medium hover:text-[#0963FF] hover:underline"
+            >
+              <span>My profile</span>
+              <i class="fas fa-external-link-alt text-black"></i>
+            </a>
+
+            <!-- Divider -->
+            <div class="w-full border-t border-black my-4"></div>
+
+            <!-- Sign Out Button -->
+            <a href="./home2.html">
+              <button
+                class="mt-2 px-4 py-2 bg-[#ffffff] text-black font-semibold border border-black rounded-md hover:bg-[#0963FF] hover:text-white"
+              >
+                Sign out
+              </button>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <div class="container text-center mx-12 mt-24">
+      <div class="grid grid-cols-2">
+        <div>
+          <img
+            src="assets/images/camping.jpg"
+            alt="Camping Image"
+            class="w-[625px] h-[600px] rounded-[36px]"
+          />
+        </div>
+
+        <div class="text-left mr-10">
+          <h2 class="text-3xl mb-2">About us</h2>
+          <h3 class="text-xl mb-4">How can I help you</h3>
+          <p class="mb-6 leading-relaxed text-2xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga et ea
+            rerum facilis inventore est deleniti commodi rem ad accusamus!
+            Obcaecati nulla nihil aliquam itaque repellendus quia voluptate quam
+            sunt omnis, ipsam, cum quis quisquam pariatur asperiores ipsa
+            facilis quidem eaque. Harum culpa obcaecati, laborum voluptates
+            debitis sit recusandae id perferendis corporis! Quisquam blanditiis
+            molestias asperiores, nihil soluta in obcaecati quaerat totam beatae
+            magnam ab dolorem libero, eius necessitatibus.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <section class="mt-12 mx-12 text-center pb-30">
+      <h2 class="text-3xl mb-4">Contact Us</h2>
+      <p class="mb-8 leading-relaxed">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident. Image from Freepik
+      </p>
+      <div class="grid grid-cols-4 gap-6 text-center text-lg">
+        <div class="flex flex-col items-center">
+          <i class="fas fa-phone-alt text-3xl mb-2"></i>
+          <p>+855 99090399</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i class="fas fa-envelope text-3xl mb-2"></i>
+          <p>ceoleang@gmail.com</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i class="fas fa-map-marker-alt text-3xl mb-2"></i>
+          <p>Phnom Penh, Street tes,ts...</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i class="fas fa-clock text-3xl mb-2"></i>
+          <p>24/7</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="bg-white mt-12 border-t-2 border-black">
+      <div
+        class="w-full max-w-screen-lg mx-auto py-10 px-6 md:flex justify-between items-center text-black"
+      >
+        <!-- Logo and text -->
+        <div class="flex items-center mb-6 md:mb-0">
+          <!-- <img src="assets/images/logo.jpg" alt="Logo" class="w-20 h-20 mr-4" /> -->
+          <div>
+            <p class="text-[#0963FF] text-xl font-bold">Camp Haven</p>
+            <p class="text-2xl font-bold">Ready, Set, Camp</p>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="flex flex-col text-center md:text-left md:mx-16">
+          <a href="/home.html" class="mb-2 hover:text-[#0963FF]">Home</a>
+          <a href="/products.html" class="mb-2 hover:text-[#0963FF]">Product</a>
+          <a href="/about.html" class="hover:text-[#0963FF]">About</a>
+        </div>
+
+        <!-- Social Links -->
+        <div class="flex flex-col text-center md:text-left">
+          <p class="mb-2">Follow Us</p>
+          <div class="flex items-center mb-2">
+            <i class="fab fa-instagram mr-2"></i>
+            <a href="mailto:support@thecampstore" class="hover:text-[#0963FF]"
+              >support@thecampstore</a
+            >
+          </div>
+          <div class="flex items-center mb-2">
+            <i class="fab fa-facebook mr-2"></i>
+            <a href="#" class="hover:text-[#0963FF]">@the-camp-store</a>
+          </div>
+          <div class="flex items-center">
+            <i class="fab fa-tiktok mr-2"></i>
+            <a href="#" class="hover:text-[#0963FF]">@the-camp-store</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer bottom -->
+      <div
+        class="text-center py-4 text-black text-sm bg-white border-t-2 border-black"
+      >
+        © 2024 the camp store. All rights reserved.
+      </div>
+    </div>
+
+    <script>
+      const profileImage = document.getElementById("profileImage");
+      const profilePopup = document.getElementById("profilePopup");
+
+      profileImage.addEventListener("click", () => {
+        profilePopup.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

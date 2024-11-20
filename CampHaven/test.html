@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body class="bg-white flex items-center justify-center min-h-screen">
+    <div id="profilePopup" class="hidden absolute top-20 right-20 >
+        <div class="w-[320px] bg-[#2C2616] text-[#d4c8aa] border-4 border-[#51725e] rounded-lg p-6 flex flex-col items-center">
+            <!-- Profile Picture -->
+            <div class="w-16 h-16 border-2 border-[#51725e] rounded-full flex items-center justify-center text-[#d4c8aa] text-lg font-bold">
+                MC
+            </div>
+    
+            <!-- Name and Email -->
+            <h1 class="mt-4 text-lg font-semibold text-[#d4c8aa]">Mang Chhunleang</h1>
+            <p class="text-sm text-[#d4c8aa] mt-1">mcl.mangchhunleang@gmail.com</p>
+    
+            <!-- Divider -->
+            <div class="w-full border-tbg-[#2C2616] my-4"></div>
+    
+            <!-- Section Title -->
+            <h2 class="w-full text-left text-sm font-semibold text-purple-500 mb-6">Addresses</h2>
+    
+            <!-- Purchase History -->
+            <a href="#" class="w-full text-left text-sm text-[#d4c8aa] mb-2 font-medium hover:underline">
+                Purchase History
+            </a>
+    
+            <!-- My sports profile with external link icon -->
+            <div class="w-full border-tbg-[#2C2616] my-4"></div>
+            <a href="#" class="w-full flex justify-between items-center text-sm text-[#d4c8aa] font-medium hover:underline">
+                <span>My sports profile</span>
+                <i class="fas fa-external-link-alt text-[#d4c8aa]"></i>
+            </a>
+    
+            <!-- Divider -->
+            <div class="w-full border-tbg-[#2C2616] my-4"></div>
+    
+            <!-- Sign Out Button -->
+            <button class="mt-2 px-4 py-2 bg-[#51725e] text-[#d3c0a5] font-semibold border border-[#51725e] rounded-md hover:bg-green-900">
+                Sign out
+            </button>
+        </div>
+    </div>
+    <script>
+        const profileButton = document.getElementById('profileButton');
+        const profilePopup = document.getElementById('profilePopup');
+
+        profileButton.addEventListener('click', () => {
+            profilePopup.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
