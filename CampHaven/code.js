@@ -12,6 +12,16 @@ let g=document.getElementById('g');
 let h=document.getElementById('h');
 let i=document.getElementById('i');
 let j=document.getElementById('j');
+let k=document.getElementById('k');
+let l=document.getElementById('l');
+let m=document.getElementById('m');
+let n=document.getElementById('n');
+let o=document.getElementById('o');
+let p=document.getElementById('p');
+let q=document.getElementById('q');
+let r=document.getElementById('r');
+let s=document.getElementById('s');
+let t=document.getElementById('t');
   var contain = document.getElementsByClassName('items')[0];
   var Allitem = contain.getElementsByClassName('item');
   var name1= contain.getElementsByTagName('h1');
@@ -24,19 +34,6 @@ let j=document.getElementById('j');
         Allitem[i].style.display="none";
       }
     }
-  }
-  document.getElementById('search1').addEventListener('keypress', function(event) {
-    if (event.key === "Enter") {
-      search();
-    }
-  });
-  const profileImage = document.getElementById('profileImage');
-    const profilePopup = document.getElementById('profilePopup');
-  function profileImage(){
-  
-    profileImage.addEventListener('click', () => {
-      profilePopup.classList.toggle('hidden');
-  });
   }
          
     
