@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camp Haven Checkout</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white">
+  <div class="w-full mx-auto py-8 px-4">
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-6">
+      <a href="#" class="text-gray-700 text-sm">
+        <i class="fas fa-chevron-left mr-2"></i> Back to cart
+      </a>
+      <img src="/DoItNow/assets/images/Camphaven.png" alt="Camp Haven Logo" class="h-10 mr-[600px]">
+    </div>
+
+    <!-- Main Content -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <!-- Left Section -->
+      <div class="lg:col-span-2 space-y-4">
+        <!-- Personal Information -->
+        <div class="border border-green-600 rounded-lg">
+          <div class="flex items-center justify-between p-4 bg-[#019B7E] text-white rounded-t-lg">
+            <h2 class="text-sm font-bold">01. Personal Information</h2>
+            <button class="text-sm underline">Edit</button>
+          </div>
+          <div class="p-4 bg-white">
+            <p class="text-sm text-gray-600">
+              Connected as <a href="#" class="text-blue-500 underline">Jonh Cena</a>. 
+              <a href="#" class="text-blue-500 underline">Change account</a>
+            </p>
+            <p class="text-xs text-gray-500 mt-1">Note: Your cart will be emptied if you sign out</p>
+            <button class="mt-4 bg-[#019B7E] text-white text-sm font-bold py-2 px-4 rounded ">
+              Next step
+            </button>
+          </div>
+        </div>
+
+        <!-- Steps -->
+        <button class="w-full text-left p-4 bg-[#019B7E] text-white text-sm font-bold rounded-lg">
+          02. Addresses
+        </button>
+        <button class="w-full text-left p-4 bg-[#019B7E] text-white text-sm font-bold rounded-lg">
+          03. Delivery Method
+        </button>
+        <button class="w-full text-left p-4 bg-[#019B7E] text-white text-sm font-bold rounded-lg">
+          04. Payment
+        </button>
+      </div>
+
+      <!-- Right Section -->
+      <div>
+        <div class="border border-gray-200 rounded-lg shadow-sm p-4 bg-white">
+          <h3 class="text-lg font-bold mb-4">Order summary</h3>
+          <!-- Product -->
+          <div class="flex items-center mb-4">
+            <img src="/DoItNow/assets/images/f8a43.jpg" alt="Product Image" class="w-16 h-16 rounded-md mr-4">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-gray-700">Riverside 100 20" Kids...</p>
+              <p class="text-xs text-gray-500">Model Code: 4480940</p>
+              <p class="text-sm font-bold text-gray-700">Quantity: 1</p>
+            </div>
+            <p class="text-sm font-bold text-gray-700">$159.00</p>
+          </div>
+
+          <!-- Voucher Code -->
+          <div class="border-t border-gray-200 pt-4">
+            <p class="text-sm text-gray-700">Have a voucher code?</p>
+            <div class="flex items-center mt-2">
+              <input type="text" class="flex-1 border border-gray-300 rounded-l-lg px-4 py-2 text-sm focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500" placeholder="Voucher code">
+              <button class="bg-yellow-500 text-white font-bold px-4 py-2 rounded-r-lg hover:bg-yellow-600">Add</button>
+            </div>
+          </div>
+
+          <!-- Price Details -->
+          <div class="mt-4">
+            <div class="flex justify-between text-sm text-gray-700">
+              <p>Subtotal</p>
+              <p>$159.00</p>
+            </div>
+            <div class="flex justify-between text-sm text-gray-700">
+              <p>Delivery</p>
+              <p>Free</p>
+            </div>
+            <div class="border-t border-gray-200 mt-2 pt-2 flex justify-between text-lg font-bold text-gray-700">
+              <p>Total</p>
+              <p>$159.00</p>
+            </div>
+          </div>
+
+          <!-- Note -->
+          <p class="mt-4 text-xs text-gray-500">
+            *Delivery fee will be calculated after the checkout step is completed.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
