@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body >
+    <!-- Header -->
+     <header>
+        <div class="w-full bg-white border-b border-gray-200">
+            <!-- Header container -->
+            <div class="flex items-center justify-between   py-2 ">
+                <!-- Left Section -->
+                <div class="flex items-center space-x-4 ml-10">
+                    <!-- Logo -->
+                    <div class="flex items-center ">
+                        <img src="/DoItNow/assets/images/Camphaven.png" alt="Logo" class="w-17 h-12">
+                    </div>
+                    <!-- Categories Button -->
+                    
+                </div>
+    
+                <!-- Search Bar -->
+                <div class="flex-1 mx-6 ml-[200px] mr-[100px] ">
+                    <div class="relative">
+                        <input 
+                            type="text" 
+                            class="w-full h-10 pl-4 pr-12 border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-500 border-gray-300 text-sm" 
+                            placeholder="Search"
+                            
+                        >
+                        <button class="absolute right-0 top-0 h-full w-10 flex items-center justify-center text-white bg-orange-500 rounded-r-full hover:bg-orange-600">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Icons -->
+                <div class="flex items-center space-x-2 text-gray-600 relative mr-11 ">
+                    <button class="flex items-center justify-center w-[50px] h-10 bg-none-100 rounded-xl text-gray-600 hover:bg-blue-200">
+                    <a href="#" ><i class="far fa-heart text-lg"></i></a>
+                </button>
+                    <button class="flex items-center justify-center w-[50px] h-10 bg-none-100 rounded-xl text-gray-600 hover:bg-blue-200">
+                    <a href="#" ><i class="fas fa-gift text-lg"></i></a>
+                </button>
+                    <button class="flex items-center justify-center w-[50px] h-10 bg-none-100 rounded-xl text-gray-600 hover:bg-blue-200">
+                    <div class="relative ml-2">
+                        <i class="far fa-bell"></i>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </button>
+                    <!-- Profile Dropdown -->
+                    <div class="relative group">
+                            <button class="flex items-center justify-center w-[50px] h-10 bg-none-100 rounded-xl text-gray-600 hover:bg-blue-200">
+                            <div class="relative ">
+                                <i class="fas fa-user-circle"></i>
+                                <i class="fa-solid fa-caret-down"></i>
+                              </div>
+                        </button>
+                        <!-- Dropdown Menu -->
+                        <div class="hidden absolute right-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-lg group-hover:block">
+                            <div class="p-4 border-b">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center">
+                                        <i class="far fa-user text-gray-600 text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-800">Mike</p>
+                                        <p class="text-sm text-gray-500">View your profile</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-2">
+                                <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 text-gray-800 text-sm">
+                                    <i class="fas fa-user-circle"></i>
+                                   
+                                    <span class="ml-3">My profile</span>
+                                </a>
+                                <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 text-gray-800 text-sm">
+                                    <i class="far fa-file-alt w-5"></i>
+                                    <span class="ml-3">Purchases History</span>
+                                </a>
+                            </div>
+                            <div class="py-2 border-t">
+                               
+                                <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 text-gray-800 text-sm">
+                                    <i class="fas fa-sign-out-alt w-5"></i>
+                                    <span class="ml-3">Sign out</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="flex items-center justify-center w-[50px] h-10 bg-none-100 rounded-xl text-gray-600 hover:bg-blue-200"><a href="#" ><i class="fas fa-shopping-cart text-lg"></i></a></button>
+                    
+                </div>
+            </div>
+        
+        </div>
+     </header>
+  
+    <div class="flex w-[1500px] mr-36 bg-white text-black ">
+      <!-- Left Sidebar -->
+      <div class="w-2/5 bg-white bg-opacity-5 text-black">
+        <div class="bg-white p-6 py-4  border-b  border-black w-full ml-1">
+          <div class="flex items-center space-x-4 mb-6">
+            <div class="">
+                <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center">
+                    <i class="far fa-user text-gray-600 text-xl"></i>
+                </div>
+            </div>
+            <div>
+              <h2 class="text-sm font-semibold">Mike</h2>
+              <p class="text-xs">MEMBER ACCOUNT NO: 2094137423380</p>
+            </div>
+          </div>
+        </div>
+
+        <nav class="space-y-4 ml-8 mt-8">
+            <button class="flex items-center justify-center w-[130px] h-10 bg-none-100 rounded-xl text-gray-600 hover:bg-blue-200">
+          <a
+            href="/DoItNow/myprofile.html"
+            class="flex items-center  space-x-2"
+          >
+          <i class="fas fa-user-circle"></i>
+            <span>My profile</span>
+          </a>
+          </button>
+          <button class="flex items-center justify-center w-[200px] h-10 bg-none-100 rounded-xl text-gray-600 hover:bg-blue-200">
+          <a
+            href="/DoItNow/purchase history.html"
+            class="flex items-center  space-x-2 "
+          >
+          <i class="fas fa-shopping-cart text-lg"></i>
+            <span>My purchase history</span>
+          </a>
+        </button>
+         <div class="py-2 border-t ml-1">
+                               
+              <a href="/DoItNow/profiled.html" class="flex items-center px-4 py-2 hover:bg-gray-100 text-gray-800 text-sm">
+            <i class="fas fa-sign-out-alt w-5"></i>
+            <span class="ml-3">Sign out</span>
+              </a>
+             </div>
+        </nav>
+        <a href="login.html">
+          <!-- <button
+            class="text-black bg-white bg-opacity-100 border-2 border-black  hover:border-green-500 font-medium rounded-md px-4 py-2 text-sm ml-8 mt-80"
+          >
+            Logout
+          </button> -->
+        </a>
+      </div>
+      <div class="bg-white w-32"></div>
+      <!-- Main Content -->
+      <div class="w-3/4 bg-white bg-opacity-5 p-3">
+        <h1 class="text-lg font-semibold mb-6">My identity</h1>
+        <form class="space-y-6">
+          <!-- Title -->
+          <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-2">
+              <input
+                type="radio"
+                id="mr"
+                name="title"
+                value="mr"
+                class="form-radio"
+              />
+              <label for="mr">Male</label>
+            </div>
+            <div class="flex items-center space-x-2">
+              <input
+                type="radio"
+                id="mrs"
+                name="title"
+                value="mrs"
+                class="form-radio"
+              />
+              <label for="mrs">Female</label>
+            </div>
+          </div>
+
+          <!-- First Name and Last Name -->
+          <div class="grid grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium text-black"
+                >* First Name</label
+              >
+              <input
+                type="text"
+                class="mt-1 block w-full text-[#2C2616] bg-white border-2 border-black rounded-md shadow-sm py-2 px-3"
+                value="Mike"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-black"
+                >* Last Name</label
+              >
+              <input
+                type="text"
+                class="mt-1 bg-white text-black block w-full border-2 border-black rounded-md shadow-sm py-2 px-3"
+                value="Brown"
+              />
+            </div>
+          </div>
+
+          <!-- Email and Phone -->
+          <div class="grid grid-cols-2 gap-6">
+            <div class="">
+              <label class="block text-sm font-medium text-black">Email</label>
+              <input
+                type="email"
+                class="mt-1 block w-full text-black bg-white border-2 border-black rounded-md shadow-sm py-2 px-3"
+                value="mike.brown@gmail.com"
+                disabled
+              />
+            </div>
+            <div class="">
+              <label class="block text-sm font-medium text-black">Phone</label>
+              <input
+                type="text"
+                class="mt-1 block w-full text-[#2C2616] bg-white border-2 border-black rounded-md shadow-sm py-2 px-3"
+                value="+855"
+              />
+              <p class="text-xs text-black mt-2">Optional</p>
+            </div>
+          </div>
+
+          <!-- Birthdate and Favorite Sports -->
+          <div class="grid grid-cols-2 gap-6">
+            <div class="">
+              <label class="block text-sm font-medium text-black"
+                >Birthdate</label
+              >
+              <input
+                type="text"
+                class="mt-1 block w-full bg-white text-black border-2 border-black rounded-md shadow-sm py-2 px-3"
+                placeholder="mm/dd/yyyy"
+              />
+              <p class="text-xs text-black mt-2 pb-2.5">Optional</p>
+            </div>
+            <style>
+              /* Change placeholder color to blue */
+              input::placeholder {
+                color: #2c2616; /* Blue color */
+              }
+            </style>
+          </div>
+
+          <!-- Save Button -->
+          <a href="./profile.html">
+            <button
+              type="submit"
+              class="text-black bg-white bg-opacity-100 border-2 border-black  hover:border-green-500 font-medium px-4 py-2 rounded-md text-sm mt-20"
+            >
+              Save
+            </button>
+          </a>
+        </form>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      const profileImage = document.getElementById("profileImage");
+      const profilePopup = document.getElementById("profilePopup");
+
+      profileImage.addEventListener("click", () => {
+        profilePopup.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
