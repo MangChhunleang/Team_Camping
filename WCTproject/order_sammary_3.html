@@ -48,22 +48,51 @@
         <!-- Left Section -->
         <div class="lg:col-span-2 space-y-4">
           <!-- Personal Information -->
+          <div
+            class="flex items-center justify-between p-4 bg-[#019B7E] text-white rounded-t-lg"
+          >
+            <h2 class="text-sm font-bold">01. Personal Information</h2>
+            <button class="text-sm underline">Edit</button>
+          </div>
+          <!-- Addresses -->
+          <div
+            class="flex items-center justify-between p-4 bg-[#019B7E] text-white rounded-t-lg"
+          >
+            <h2 class="text-sm font-bold">02. Addresses</h2>
+            <button class="text-sm underline">Edit</button>
+          </div>
+          <!-- Personal Information -->
           <div class="">
             <div
               class="flex items-center justify-between p-4 bg-[#019B7E] text-white rounded-t-lg"
             >
-              <h2 class="text-sm font-bold">01. Personal Information</h2>
-              <button class="text-sm underline">Edit</button>
+              <h2 class="text-sm font-bold">03. Delivery Method</h2>
             </div>
-            <div class="p-4 bg-white">
-              <p class="text-sm text-[#636064]">
-                Connected as
-                <a href="#" class="text-[#2786DD] underline">Mike Brown</a>.
-                <a href="#" class="text-blue-500 underline">Change account</a>
-              </p>
-              <p class="text-xs text-[#C0C0C5] mt-1">
-                Note: Your cart will be emptied if you sign out
-              </p>
+            <div class="p-6 border rounded-md shadow-md text-gray-700">
+              <!-- Delivery Option -->
+              <div class="mb-4 flex justify-around gap-6">
+                <label class="flex items-center">
+                  <input type="radio" name="delivery" class="mr-2" checked />
+                  <span>Phnom Penh Zonel</span>
+                </label>
+                <span> Delivery within 24 Hours </span>
+                <span class="text-[#019B7E]">Free</span>
+              </div>
+
+              <!-- Comment Section -->
+              <div class="mb-4">
+                <label class="block text-gray-500 font-medium mb-2">
+                  If you would like to add a comment about your order, please
+                  write it in the field below.
+                </label>
+                <textarea
+                  class="w-full p-2 border border-gray-400 rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#019B7E]"
+                  rows="1"
+                  placeholder="Add your comment here..."
+                ></textarea>
+              </div>
+
+              <!-- Next Step Button -->
               <button
                 class="mt-4 bg-[#019B7E] text-white text-sm font-bold py-2 px-4 rounded"
               >
@@ -71,17 +100,6 @@
               </button>
             </div>
           </div>
-          <!-- Steps -->
-          <button
-            class="w-full text-left p-4 bg-[#019B7E] text-[#d9d9d9] text-sm font-bold rounded-lg"
-          >
-            02. Addresses
-          </button>
-          <button
-            class="w-full text-left p-4 bg-[#019B7E] text-[#d9d9d9] text-sm font-bold rounded-lg"
-          >
-            03. Delivery Method
-          </button>
           <button
             class="w-full text-left p-4 bg-[#019B7E] text-[#d9d9d9] text-sm font-bold rounded-lg"
           >
