@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camping Categories</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- header -->
+    <header class="flex items-center justify-between p-4 bg-white shadow-md border-b border-gray-200">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <img src="assets/images/Camphaven.png" alt="Logo" class="w-17 h-12" />
+        </div>
+  
+        <!-- Search Bar -->
+        <div class="flex-grow mx-5 text-lg">
+          <div class="relative">
+            <input type="text" placeholder="Search products"
+              class="w-full py-2 pl-12 pr-4 border-2 border-gray-300 rounded-lg bg-gray-100 text-gray-600 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500" />
+            <i class="fas fa-search absolute top-1/2 transform -translate-y-1/2 left-4 text-gray-500"></i>
+          </div>
+        </div>
+  
+        <!-- User Icon and Basket -->
+        <div class="flex items-center space-x-6 text-lg">
+          <!-- Profile Icon with onclick to toggle modal -->
+          <div class="flex items-center space-x-6 text-lg">
+            <i id="profileIcon" class="far fa-user-circle text-2xl text-gray-700 cursor-pointer"></i>
+          </div>
+  
+          <div class="flex items-center text-gray-700">
+            <span>Basket / $0.00</span>
+            <i class="fas fa-shopping-cart ml-2"></i>
+          </div>
+          <button class="px-6 py-2 bg-[#019B7E] text-white rounded-full hover:bg-green-700">
+            CHECKOUT
+          </button>
+        </div>
+      </header>
+      <nav class="bg-white py-2">
+        <div class="flex justify-center space-x-6 text-xs text-white-300 font-semibold tracking-wide">
+          <a href="#" class="hover:text-[#019b7e]">TENTS & ACCESSORIES <i
+              class="fas fa-chevron-down text-xs ml-1"></i></a>
+          <a href="#" class="hover:text-[#019b7e]">SLEEPING <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+          <a href="#" class="hover:text-[#019b7e]">KITCHEN <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+          <a href="#" class="hover:text-[#019b7e]">LIGHT & HEAT <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+          <a href="#" class="hover:text-[#019b7e]">FURNITURE <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+          <a href="#" class="hover:text-[#019b7e]">CLOTHING <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+          <a href="#" class="hover:text-[#019b7e]">FOOTWEAR <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+          <a href="#" class="hover:text-[#019b7e]">RUCKSACKS & BAGS <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+          <a href="#" class="hover:text-[#019b7e]">HIKING <i class="fas fa-chevron-down text- ml-1"></i></a>
+  
+        </div>
+      </nav>
+      
+  <div class="max-w-screen-xl mx-auto grid grid-cols-6 gap-4 p-4">
+    <!-- Item -->
+    <div class="relative bg-white">
+      <img src="/WCTproject/assets/images/tent2.png" alt="1 Man Tent" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white text-lg font-bold">1 MAN TENTS</span>
+      </div>
+    </div>
+    <!-- Item -->
+    <div class="relative bg-white">
+      <img src="/WCTproject/assets/images/ten3.png" alt="2 Man Tent" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white text-lg font-bold">2 MAN TENTS</span>
+      </div>
+    </div>
+    <!-- Item -->
+    <div class="relative bg-white">
+      <img src="/WCTproject/assets/images/tent4.png" alt="3 Man Tent" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white text-lg font-bold">3 MAN TENTS</span>
+      </div>
+    </div>
+    <!-- Item -->
+    <div class="relative bg-white">
+      <img src="/WCTproject/assets/images/tent5.png" alt="4 Man Tent" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white text-lg font-bold">4 MAN TENTS</span>
+      </div>
+    </div>
+    <!-- Item -->
+    <div class="relative bg-white">
+      <img src="/WCTproject/assets/images/tent6.png" alt="Family Tents - Poled" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white text-lg font-bold">FAMILY TENTS - POLED</span>
+      </div>
+    </div>
+    <!-- Item -->
+    <div class="relative bg-white">
+      <img src="/WCTproject/assets/images/tent2.pngx" alt="Family Tents - Air" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white text-lg font-bold">FAMILY TENTS - AIR</span>
+      </div>
+    </div>
+    <!-- Row 2 -->
+    <div class="relative bg-white">
+      <img src="https://placehold.co/300x200" alt="Awnings - Poled" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white text-lg font-bold">AWNINGS - POLED</span>
+      </div>
+    </div>
+    <div class="relative bg-white">
+      <img src="https://placehold.co/300x200" alt="Awnings - Air" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white text-lg font-bold">AWNINGS - AIR</span>
+      </div>
+    </div>
+    <div class="relative bg-white">
+      <img src="https://placehold.co/300x200" alt="Utility Tents" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white text-lg font-bold">UTILITY TENTS</span>
+      </div>
+    </div>
+    <div class="relative bg-white">
+      <img src="https://placehold.co/300x200" alt="Shelters" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white text-lg font-bold">SHELTERS</span>
+      </div>
+    </div>
+    <div class="relative bg-white">
+      <img src="https://placehold.co/300x200" alt="Tent Care & Repair" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white text-lg font-bold">TENT CARE & REPAIR</span>
+      </div>
+    </div>
+    <div class="relative bg-white">
+      <img src="https://placehold.co/300x200" alt="Footprints & Carpets" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white text-lg font-bold">FOOTPRINTS & CARPETS</span>
+      </div>
+    </div>
+    <div class="relative bg-white">
+        <img src="https://placehold.co/300x200" alt="Footprints & Carpets" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <span class="text-white text-lg font-bold">FOOTPRINTS & CARPETS</span>
+        </div>
+      </div>
+      <div class="relative bg-white">
+        <img src="https://placehold.co/300x200" alt="Footprints & Carpets" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <span class="text-white text-lg font-bold">FOOTPRINTS & CARPETS</span>
+        </div>
+      </div>
+      <div class="relative bg-white">
+        <img src="https://placehold.co/300x200" alt="Footprints & Carpets" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <span class="text-white text-lg font-bold">FOOTPRINTS & CARPETS</span>
+        </div>
+      </div>    
+      <div class="relative bg-white">
+        <img src="https://placehold.co/300x200" alt="Footprints & Carpets" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <span class="text-white text-lg font-bold">FOOTPRINTS & CARPETS</span>
+        </div>
+      </div>
+      <div class="relative bg-white">
+        <img src="https://placehold.co/300x200" alt="Footprints & Carpets" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <span class="text-white text-lg font-bold">FOOTPRINTS & CARPETS</span>
+        </div>
+      </div>
+      <div class="relative bg-white">
+        <img src="https://placehold.co/300x200" alt="Footprints & Carpets" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <span class="text-white text-lg font-bold">FOOTPRINTS & CARPETS</span>
+        </div>
+      </div>
+    <!-- Continue rows... -->
+  </div>
+     <!-- Footer -->
+     <footer class="bg-gray-300 py-6 mt-28 text-[#666666]">
+        <div class="container mx-auto">
+            <nav class="mb-4 ml-10">
+                <div>
+                    <a href="#" class="mx-2 hover:text-[#019B7E]">Terms & Conditions</a>
+                    <a href="#" class="mx-2 hover:text-[#019B7E]">Privacy Policy</a>
+                    <a href="#" class="mx-2 hover:text-[#019B7E]">Returns Policy</a>
+                    <a href="#" class="mx-2 hover:text-[#019B7E]">Cookie Policy</a>
+                    <a href="#" class="mx-2 hover:text-[#019B7E]">Contact Us</a>
+                    <a href="#" class="mx-2 hover:text-[#019B7E]">Facebook</a>
+                    <a href="#" class="mx-2 hover:text-[#019B7E]">Instagram</a>
+                    <a href="#" class="mx-2 hover:text-[#019B7E]">Ultimate Guide to Camping</a>
+                    <a href="#" class="mx-2 hover:text-[#019B7E]">Delivery Charges</a>
+                </div>
+                <div class="flex justify-end space-x-8 mr-10 ">
+                    <a href="" class="text-4xl hover:text-[#019B7E]"><i class="fa-brands fa-cc-visa"></i></a>
+                    <a href="" class="text-4xl hover:text-[#019B7E]"><i class="fa-brands fa-cc-paypal"></i></a>
+                    <a href="" class="text-4xl hover:text-[#019B7E]"><i class="fa-brands fa-cc-mastercard"></i></a>
+                </div>
+                <div>
+                    <p class=" ml-2">Copyright 2024 © Camp Haven</p>
+                </div>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
