@@ -7,176 +7,228 @@
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   <style>
     body {
       font-family: 'Roboto', sans-serif;
     }
   </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-white">
 
-    <!-- header -->
-    <header class="flex items-center justify-between p-4 bg-white shadow-md border-b border-gray-200">
-        <!-- Logo -->
-        <div class="flex items-center space-x-2">
-          <img src="assets/images/Camphaven.png" alt="Logo" class="w-17 h-12" />
+
+  <header class="flex items-center justify-between p-4 bg-white shadow-md border-b border-gray-200">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="assets/images/Camphaven.png" alt="Logo" class="w-17 h-12" />
+      </div>
+
+      <!-- Search Bar -->
+      <div class="flex-grow mx-5 text-lg">
+        <div class="relative">
+          <input type="text" placeholder="Search products"
+            class="w-full py-2 pl-12 pr-4 border-2 border-gray-300 rounded-lg bg-gray-100 text-gray-600 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500" />
+          <i class="fas fa-search absolute top-1/2 transform -translate-y-1/2 left-4 text-gray-500"></i>
         </div>
-  
-        <!-- Search Bar -->
-        <div class="flex-grow mx-5 text-lg">
-          <div class="relative">
-            <input type="text" placeholder="Search products"
-              class="w-full py-2 pl-12 pr-4 border-2 border-gray-300 rounded-lg bg-gray-100 text-gray-600 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500" />
-            <i class="fas fa-search absolute top-1/2 transform -translate-y-1/2 left-4 text-gray-500"></i>
-          </div>
-        </div>
-  
-        <!-- User Icon and Basket -->
-        <div class="flex items-center space-x-6 text-lg">
-          <!-- Profile Icon with onclick to toggle modal -->
-          <div class="flex items-center space-x-6 text-lg">
-            <i id="profileIcon" class="far fa-user-circle text-2xl text-gray-700 cursor-pointer"></i>
-          </div>
-  
-          <div class="flex items-center text-gray-700">
-            <span>Basket / $0.00</span>
-            <i class="fas fa-shopping-cart ml-2"></i>
-          </div>
-          <button class="px-6 py-2 bg-[#019B7E] text-white rounded-full hover:bg-green-700">
-            CHECKOUT
+      </div>
+
+      <!-- User Icon and Basket -->
+      <div class="flex items-center space-x-6 text-lg">
+        <!-- Profile Icon with onclick to toggle modal -->
+        <div class="relative">
+          <!-- <button class="flex items-center justify-center w-[50px] h-10 bg-none-100 rounded-xl text-gray-600 hover:bg-blue-200" onclick="toggleVisibility(event,'dropdown')"> -->
+          <button onclick="toggleVisibility(event,'dropdown')">
+            <div
+              class="relative flex items-center justify-center w-[50px] h-10 bg-none-100 rounded-xl text-gray-600 hover:bg-blue-200  ">
+              <i class="fas fa-user-circle mr-1 text-2xl"></i>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
           </button>
+          <!-- Dropdown Menu -->
+          <!-- fixed  bg-gray-900 bg-opacity-50 flex items-center justify-center hidden z-50 -->
+          <div id="dropdown"
+            class="hidden z-50  fixed absolute left-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-lg group-hover:block ">
+            <div class="p-4 border-b">
+              <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center">
+                  <i class="far fa-user text-gray-600 text-xl"></i>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-800">Miker</p>
+                  <p class="text-sm text-gray-500">View your profile</p>
+                </div>
+              </div>
+            </div>
+            <div class="py-2">
+              <a href="/DoItNow/myprofile.html"
+                class="flex items-center px-4 py-2 hover:bg-gray-100 text-gray-800 text-sm">
+                <i class="fas fa-user-circle"></i>
+
+                <span class="ml-3">My profile</span>
+              </a>
+              <a href="/DoItNow/History.html"
+                class="flex items-center px-4 py-2 hover:bg-gray-100 text-gray-800 text-sm">
+                <i class="far fa-file-alt w-5"></i>
+                <span class="ml-3">Purchases History</span>
+              </a>
+            </div>
+            <div class="py-2 border-t">
+
+              <a href="" class="flex items-center px-4 py-2 hover:bg-gray-100 text-gray-800 text-sm">
+                <i class="fas fa-sign-out-alt w-5"></i>
+                <span class="ml-3">Sign out</span>
+              </a>
+            </div>
+          </div>
         </div>
-      </header>
-      <nav class="bg-white py-2">
-        <div class="flex justify-center space-x-6 text-xs text-white-300 font-semibold tracking-wide">
-          <a href="#" class="hover:text-[#019b7e]">TENTS & ACCESSORIES <i
-              class="fas fa-chevron-down text-xs ml-1"></i></a>
-          <a href="#" class="hover:text-[#019b7e]">SLEEPING <i class="fas fa-chevron-down text-xs ml-1"></i></a>
-          <a href="#" class="hover:text-[#019b7e]">KITCHEN <i class="fas fa-chevron-down text-xs ml-1"></i></a>
-          <a href="#" class="hover:text-[#019b7e]">LIGHT & HEAT <i class="fas fa-chevron-down text-xs ml-1"></i></a>
-          <a href="#" class="hover:text-[#019b7e]">FURNITURE <i class="fas fa-chevron-down text-xs ml-1"></i></a>
-          <a href="#" class="hover:text-[#019b7e]">CLOTHING <i class="fas fa-chevron-down text-xs ml-1"></i></a>
-          <a href="#" class="hover:text-[#019b7e]">FOOTWEAR <i class="fas fa-chevron-down text-xs ml-1"></i></a>
-          <a href="#" class="hover:text-[#019b7e]">RUCKSACKS & BAGS <i class="fas fa-chevron-down text-xs ml-1"></i></a>
-          <a href="#" class="hover:text-[#019b7e]">HIKING <i class="fas fa-chevron-down text- ml-1"></i></a>
-  
+
+        <div class="flex items-center text-gray-700">
+          <span>Basket / $30.00</span>
+          <a href="./checkout1.html">
+            <i class="fas fa-shopping-cart ml-2">
+              <span
+                class="absolute mr-10  top-4 inline-flex px-2 py-1 text-xs font-bold leading-none text-white bg-red-600 rounded-full">1</span>
+            </i>
+          </a>
         </div>
-      </nav>
+        <button class="px-6 py-2 bg-[#019B7E] text-white rounded-full hover:bg-green-700">
+          CHECKOUT
+        </button>
+      </div>
+    </header>
+
+
+    <nav class="bg-white py-2">
+      <div class="flex justify-center space-x-6 text-xs text-white-300 font-semibold tracking-wide">
+        <a href="#" class="hover:text-[#019b7e]">TENTS & ACCESSORIES <i
+            class="fas fa-chevron-down text-xs ml-1"></i></a>
+        <a href="#" class="hover:text-[#019b7e]">SLEEPING <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+        <a href="#" class="hover:text-[#019b7e]">KITCHEN <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+        <a href="#" class="hover:text-[#019b7e]">LIGHT & HEAT <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+        <a href="#" class="hover:text-[#019b7e]">FURNITURE <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+        <a href="#" class="hover:text-[#019b7e]">CLOTHING <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+        <a href="#" class="hover:text-[#019b7e]">FOOTWEAR <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+        <a href="#" class="hover:text-[#019b7e]">RUCKSACKS & BAGS <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+        <a href="#" class="hover:text-[#019b7e]">HIKING <i class="fas fa-chevron-down text- ml-1"></i></a>
+      </div>
+
+        
+      
       
   <div class="max-w-screen-xl mx-auto grid grid-cols-6 gap-4 p-4">
     <!-- Item -->
     <div class="relative bg-white">
       <img src="/WCTproject/assets/images/tent2.png" alt="1 Man Tent" class="w-full h-full object-cover">
       <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <span class="text-white text-lg font-bold">1 MAN TENTS</span>
+        <span class="text-white  ">1 MAN TENTS</span>
       </div>
     </div>
     <!-- Item -->
     <div class="relative bg-white">
       <img src="/WCTproject/assets/images/ten3.png" alt="2 Man Tent" class="w-full h-full object-cover">
       <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <span class="text-white text-lg font-bold">2 MAN TENTS</span>
+        <span class="text-white  ">2 MAN TENTS</span>
       </div>
     </div>
     <!-- Item -->
     <div class="relative bg-white">
       <img src="/WCTproject/assets/images/tent4.png" alt="3 Man Tent" class="w-full h-full object-cover">
       <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <span class="text-white text-lg font-bold">3 MAN TENTS</span>
+        <span class="text-white  ">3 MAN TENTS</span>
       </div>
     </div>
     <!-- Item -->
     <div class="relative bg-white">
       <img src="/WCTproject/assets/images/tent5.png" alt="4 Man Tent" class="w-full h-full object-cover">
       <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <span class="text-white text-lg font-bold">4 MAN TENTS</span>
+        <span class="text-white  ">4 MAN TENTS</span>
       </div>
     </div>
     <!-- Item -->
     <div class="relative bg-white">
       <img src="/WCTproject/assets/images/tent6.png" alt="Family Tents - Poled" class="w-full h-full object-cover">
       <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <span class="text-white text-lg font-bold">FAMILY TENTS - POLED</span>
+        <span class="text-white  ">FAMILY TENTS - POLED</span>
       </div>
     </div>
     <!-- Item -->
     <div class="relative bg-white">
-      <img src="/WCTproject/assets/images/tent2.pngx" alt="Family Tents - Air" class="w-full h-full object-cover">
+      <img src="/WCTproject/assets/images/tent7.png" alt="Family Tents - Air" class="w-full h-full object-cover">
       <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <span class="text-white text-lg font-bold">FAMILY TENTS - AIR</span>
+        <span class="text-white text-lg ">FAMILY TENTS - AIR</span>
       </div>
     </div>
     <!-- Row 2 -->
     <div class="relative bg-white">
-      <img src="https://placehold.co/300x200" alt="Awnings - Poled" class="w-full h-full object-cover">
+      <img src="/WCTproject/assets/images/tent8.png" alt="Awnings - Poled" class="w-full h-full object-cover">
       <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <span class="text-white text-lg font-bold">AWNINGS - POLED</span>
+        <span class="text-white text-lg ">AWNINGS - POLED</span>
       </div>
     </div>
     <div class="relative bg-white">
-      <img src="https://placehold.co/300x200" alt="Awnings - Air" class="w-full h-full object-cover">
+      <img src="/WCTproject/assets/images/tent9.png" alt="Awnings - Air" class="w-full h-full object-cover">
       <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <span class="text-white text-lg font-bold">AWNINGS - AIR</span>
+        <span class="text-white text-lg ">AWNINGS - AIR</span>
       </div>
     </div>
     <div class="relative bg-white">
-      <img src="https://placehold.co/300x200" alt="Utility Tents" class="w-full h-full object-cover">
+      <img src="/WCTproject/assets/images/tent10.png" alt="Utility Tents" class="w-full h-full object-cover">
       <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <span class="text-white text-lg font-bold">UTILITY TENTS</span>
+        <span class="text-white text-lg ">UTILITY TENTS</span>
       </div>
     </div>
     <div class="relative bg-white">
-      <img src="https://placehold.co/300x200" alt="Shelters" class="w-full h-full object-cover">
+      <img src="/WCTproject/assets/images/tent11.png" alt="Shelters" class="w-full h-full object-cover">
       <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <span class="text-white text-lg font-bold">SHELTERS</span>
+        <span class="text-white text-lg ">SHELTERS</span>
       </div>
     </div>
     <div class="relative bg-white">
-      <img src="https://placehold.co/300x200" alt="Tent Care & Repair" class="w-full h-full object-cover">
+      <img src="/WCTproject/assets/images/tent12.png" alt="Tent Care & Repair" class="w-full h-full object-cover">
       <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <span class="text-white text-lg font-bold">TENT CARE & REPAIR</span>
+        <span class="text-white text-lg ">TENT CARE & REPAIR</span>
       </div>
     </div>
     <div class="relative bg-white">
-      <img src="https://placehold.co/300x200" alt="Footprints & Carpets" class="w-full h-full object-cover">
-      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <span class="text-white text-lg font-bold">FOOTPRINTS & CARPETS</span>
+      <img src="/WCTproject/assets/images/ten13.png" alt="Footprints & Carpets" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center  justify-center">
+        <span class="text-white  ">FOOTPRINTS & CARPETS</span>
       </div>
     </div>
     <div class="relative bg-white">
-        <img src="https://placehold.co/300x200" alt="Footprints & Carpets" class="w-full h-full object-cover">
+        <img src="/WCTproject/assets/images/tent14.png" alt="Footprints & Carpets" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <span class="text-white text-lg font-bold">FOOTPRINTS & CARPETS</span>
+          <span class="text-white  ">FOOTPRINTS & CARPETS</span>
         </div>
       </div>
       <div class="relative bg-white">
-        <img src="https://placehold.co/300x200" alt="Footprints & Carpets" class="w-full h-full object-cover">
+        <img src="/WCTproject/assets/images/tent15.png" alt="Footprints & Carpets" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <span class="text-white text-lg font-bold">FOOTPRINTS & CARPETS</span>
+          <span class="text-white  ">FOOTPRINTS & CARPETS</span>
         </div>
       </div>
       <div class="relative bg-white">
-        <img src="https://placehold.co/300x200" alt="Footprints & Carpets" class="w-full h-full object-cover">
+        <img src="/WCTproject/assets/images/tent16.png" alt="Footprints & Carpets" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <span class="text-white text-lg font-bold">FOOTPRINTS & CARPETS</span>
+          <span class="text-white  ">FOOTPRINTS & CARPETS</span>
         </div>
       </div>    
       <div class="relative bg-white">
-        <img src="https://placehold.co/300x200" alt="Footprints & Carpets" class="w-full h-full object-cover">
+        <img src="/WCTproject/assets/images/tent17.png" alt="Footprints & Carpets" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <span class="text-white text-lg font-bold">FOOTPRINTS & CARPETS</span>
+          <span class="text-white  ">FOOTPRINTS & CARPETS</span>
         </div>
       </div>
       <div class="relative bg-white">
-        <img src="https://placehold.co/300x200" alt="Footprints & Carpets" class="w-full h-full object-cover">
+        <img src="/WCTproject/assets/images/tent18.png" alt="Footprints & Carpets" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <span class="text-white text-lg font-bold">FOOTPRINTS & CARPETS</span>
+          <span class="text-white ">FOOTPRINTS & CARPETS</span>
         </div>
       </div>
       <div class="relative bg-white">
-        <img src="https://placehold.co/300x200" alt="Footprints & Carpets" class="w-full h-full object-cover">
+        <img src="/WCTproject/assets/images/tent19.png" alt="Footprints & Carpets" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <span class="text-white text-lg font-bold">FOOTPRINTS & CARPETS</span>
+          <span class="text-white  ">FOOTPRINTS & CARPETS</span>
         </div>
       </div>
     <!-- Continue rows... -->
@@ -207,5 +259,39 @@
             </nav>
         </div>
     </footer>
+    <script>
+      const profileIcon = document.getElementById("profileIcon");
+  const profileModal = document.getElementById("profileModal");
+  const registrationForm = document.getElementById("registrationForm");
+  const signInForm = document.getElementById("signInForm");
+  const carousel = document.getElementById("default-carousel");
+  
+  profileIcon.addEventListener("click", () => {
+    toggleModal("profileModal");
+  });
+  
+  
+  
+  function toggleModal(modalID) {
+    const modal = document.getElementById(modalID);
+    modal.classList.toggle("hidden");
+  
+    // Disable pointer events on the carousel when the modal is open
+    if (!modal.classList.contains("hidden")) {
+      carousel.style.pointerEvents = "none";
+    } else {
+      carousel.style.pointerEvents = "auto";
+    }
+  }
+  
+  function toggleVisibility(event, id) {
+    const element = document.getElementById(id);
+    if (element.classList.contains('hidden')) {
+      element.classList.remove('hidden');
+    } else {
+      element.classList.add('hidden');
+    }
+  }
+  </script>
 </body>
 </html>

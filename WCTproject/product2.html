@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 Man Tents</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white">
+
+
+    <header class="flex items-center justify-between p-4 bg-white shadow-md border-b border-gray-200">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <img src="assets/images/Camphaven.png" alt="Logo" class="w-17 h-12" />
+        </div>
+  
+        <!-- Search Bar -->
+        <div class="flex-grow mx-5 text-lg">
+          <div class="relative">
+            <input type="text" placeholder="Search products"
+              class="w-full py-2 pl-12 pr-4 border-2 border-gray-300 rounded-lg bg-gray-100 text-gray-600 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500" />
+            <i class="fas fa-search absolute top-1/2 transform -translate-y-1/2 left-4 text-gray-500"></i>
+          </div>
+        </div>
+  
+        <!-- User Icon and Basket -->
+        <div class="flex items-center space-x-6 text-lg">
+          <!-- Profile Icon with onclick to toggle modal -->
+          <div class="relative">
+            <!-- <button class="flex items-center justify-center w-[50px] h-10 bg-none-100 rounded-xl text-gray-600 hover:bg-blue-200" onclick="toggleVisibility(event,'dropdown')"> -->
+            <button onclick="toggleVisibility(event,'dropdown')">
+              <div
+                class="relative flex items-center justify-center w-[50px] h-10 bg-none-100 rounded-xl text-gray-600 hover:bg-blue-200  ">
+                <i class="fas fa-user-circle mr-1 text-2xl"></i>
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </button>
+            <!-- Dropdown Menu -->
+            <!-- fixed  bg-gray-900 bg-opacity-50 flex items-center justify-center hidden z-50 -->
+            <div id="dropdown"
+              class="hidden z-50  fixed absolute left-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-lg group-hover:block ">
+              <div class="p-4 border-b">
+                <div class="flex items-center space-x-3">
+                  <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center">
+                    <i class="far fa-user text-gray-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <p class="font-medium text-gray-800">Miker</p>
+                    <p class="text-sm text-gray-500">View your profile</p>
+                  </div>
+                </div>
+              </div>
+              <div class="py-2">
+                <a href="/DoItNow/myprofile.html"
+                  class="flex items-center px-4 py-2 hover:bg-gray-100 text-gray-800 text-sm">
+                  <i class="fas fa-user-circle"></i>
+  
+                  <span class="ml-3">My profile</span>
+                </a>
+                <a href="/DoItNow/History.html"
+                  class="flex items-center px-4 py-2 hover:bg-gray-100 text-gray-800 text-sm">
+                  <i class="far fa-file-alt w-5"></i>
+                  <span class="ml-3">Purchases History</span>
+                </a>
+              </div>
+              <div class="py-2 border-t">
+  
+                <a href="" class="flex items-center px-4 py-2 hover:bg-gray-100 text-gray-800 text-sm">
+                  <i class="fas fa-sign-out-alt w-5"></i>
+                  <span class="ml-3">Sign out</span>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="flex items-center text-gray-700">
+            <span>Basket / $30.00</span>
+            <a href="./checkout1.html">
+              <i class="fas fa-shopping-cart ml-2">
+                <span
+                  class="absolute mr-10  top-4 inline-flex px-2 py-1 text-xs font-bold leading-none text-white bg-red-600 rounded-full">1</span>
+              </i>
+            </a>
+          </div>
+          <button class="px-6 py-2 bg-[#019B7E] text-white rounded-full hover:bg-green-700">
+            CHECKOUT
+          </button>
+        </div>
+      </header>
+  
+
+      <nav class="bg-white py-2">
+        <div class="flex justify-center space-x-6 text-xs text-white-300 font-semibold tracking-wide">
+          <a href="#" class="hover:text-[#019b7e]">TENTS & ACCESSORIES <i
+              class="fas fa-chevron-down text-xs ml-1"></i></a>
+          <a href="#" class="hover:text-[#019b7e]">SLEEPING <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+          <a href="#" class="hover:text-[#019b7e]">KITCHEN <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+          <a href="#" class="hover:text-[#019b7e]">LIGHT & HEAT <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+          <a href="#" class="hover:text-[#019b7e]">FURNITURE <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+          <a href="#" class="hover:text-[#019b7e]">CLOTHING <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+          <a href="#" class="hover:text-[#019b7e]">FOOTWEAR <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+          <a href="#" class="hover:text-[#019b7e]">RUCKSACKS & BAGS <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+          <a href="#" class="hover:text-[#019b7e]">HIKING <i class="fas fa-chevron-down text- ml-1"></i></a>
+        </div>
+
+      
+  <div class="max-w-screen-xl mx-auto p-8">
+    <!-- Breadcrumb -->
+    <nav class="text-sm text-[#666666B2] mb-4">
+      <a href="#" class="">Home</a> / 
+      <a href="#" class="hover:text-[#666666B2]">Tents</a> / 
+      <span class="text-gray-700 font-medium">2 Man Tents</span>
+    </nav>
+
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-6">
+      <button class="flex items-center text-[#777777] font-bold border border-gray-300 px-4 py-2 text-sm hover:bg-gray-100">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h18M3 10h18M3 15h18" />
+        </svg>
+        Filter
+      </button>
+      <div class="flex space-x-2">
+        <div class="text-sm text-gray-500 mt-2">
+            Showing all <span class="font-medium text-gray-700">13 results</span>
+            
+          </div>
+        <div>
+      <select class="border bg-white h-10 border-[#DDDDDD] text-[#333333] text-sm px-4 py-2 rounded-md focus:outline-none">
+        <option>Sort by latest</option>
+        <option>Sort by price: low to high</option>
+        <option>Sort by price: high to low</option>
+      </select>
+    </div>
+    
+    </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="grid grid-cols-4 gap-6 p-4">
+      <!-- Product Card -->
+      <div class="bg-white  ">
+        <img src="/WCTproject/assets/images/image_product2/p1.png" alt="Easy Camp Spirit" class="mb-4 w-full h-[170px] ">
+        <h3 class="text-[#019B7E] text-[11px] mb-2">Easy Camp Spirit 200 2 Man Tent Rustic Green</h3>
+        <p class="text-black text-sm font-bold ">$54.95</p>
+        <button class="mt-2 bg-[#019B7E] text-white text-[11px] px-4 py-2 rounded ">
+          ADD TO BASKET
+        </button>
+      </div>
+      <!-- Product Card -->
+      <div class="bg-white ">
+        <img src="/WCTproject/assets/images/image_product2/p2.png" alt="Easy Camp Quasar" class="mb-4 w-full h-[170px] ">
+        <h3 class="text-[#019B7E] text-[11px] mb-2">Easy Camp Quasar 200 2 Man Tent Rustic Green</h3>
+        <p class="text-black text-sm font-bold">$49.95</p>
+        <button class="mt-2 bg-[#019B7E] text-white text-[11px] px-4 py-2 rounded ">
+          ADD TO BASKET
+        </button>
+      </div>
+      <!-- Product Card -->
+      <div class="bg-white ">
+        <img src="/WCTproject/assets/images/image_product2/p3.png" alt="Coleman Darwin" class="mb-4 w-full h-[175px] ">
+        <h3 class="text-[#019B7E] text-[11px] mb-2">Coleman Darwin 2 2 Man Tent</h3>
+        <p class="text-black text-sm font-bold">$59.95</p>
+        <button class="mt-2 bg-[#019B7E] text-white text-[11px] px-4 py-2 rounded ">
+          ADD TO BASKET
+        </button>
+      </div>
+      <!-- Product Card -->
+      <div class="bg-white ">
+        <img src="/WCTproject/assets/images/image_product2/p4.png" alt="Robens Arch" class="mb-4 w-full h-[175px] ">
+        <h3 class="text-[#019B7E] text-[11px] mb-2">Robens Arch 2 Man Tent</h3>
+        <p class="text-black text-sm font-bold">$59.95</p>
+        <button class="mt-2 bg-[#019B7E] text-white text-[11px] px-4 py-2 rounded ">
+          ADD TO BASKET
+        </button>
+      </div>
+      <!-- Product Card -->
+      <div class="bg-white mt-5">
+        <img src="/WCTproject/assets/images/image_product2/p5.png" alt="Outwell Free Standing Inner" class="mb-4 w-full h-[175px] ">
+        <h3 class="text-[#019B7E] text-[11px] mb-2">Outwell Free Standing Inner L </h3>
+        <p class="text-black text-sm font-bold">$74.95</p>
+        <button class="mt-2 bg-[#019B7E] text-white text-[11px] px-4 py-2 rounded ">
+          ADD TO BASKET
+        </button>
+      </div>
+      <!-- Product Card -->
+      <div class="bg-white mt-5 ">
+        <img src="/WCTproject/assets/images/image_product2/p6.png" alt="Jack Wolfskin Skyrocket II" class="mb-4 w-full h-[175px] ">
+        <h3 class="text-[#019B7E] text-[11px] mb-2">Jack Wolfskin Skyrocket II </h3>
+        <p class="text-black text-sm font-bold">$144.95</p>
+        <button class="mt-2 bg-[#019B7E] text-white text-[11px] px-4 py-2 rounded ">
+          ADD TO BASKET
+        </button>
+      </div>
+      <!-- Product Card -->
+      <div class="bg-white mt-5 ">
+        <img src="/WCTproject/assets/images/image_product2/p7.png" alt="Jack Wolfskin Eclipse II" class="mb-4 w-full h-[175px] ">
+        <h3 class="text-[#019B7E] text-[11px] mb-2">Jack Wolfskin Eclipse II - 2 Man Tent </h3>
+        <p class="text-black text-sm font-bold">$155.00</p>
+        <button class="mt-2 bg-[#019B7E] text-white text-[11px] px-4 py-2 rounded ">
+          ADD TO BASKET
+        </button>
+      </div>
+      <!-- Product Card -->
+      <div class="bg-white mt-5">
+        <img src="/WCTproject/assets/images/image_product2/p8.png" alt="Jack Wolfskin Skyrocket II" class="mb-4 w-full h-[175px] ">
+        <h3 class="text-[#019B7E] text-[11px] mb-2">Jack Wolfskin Skyrocket II </h3>
+        <p class="text-black text-sm font-bold">$144.95</p>
+        <button class="mt-2 bg-[#019B7E] text-white text-[11px] px-4 py-2 rounded ">
+          ADD TO BASKET
+        </button>
+      </div>
+      <div class="bg-white mt-5">
+        <img src="/WCTproject/assets/images/image_product2/p9.png" alt="Jack Wolfskin Skyrocket II" class="mb-4 w-full h-[175px] ">
+        <h3 class="text-[#019B7E] text-[11px] mb-2">Jack Wolfskin Skyrocket II </h3>
+        <p class="text-black text-sm font-bold">$144.95</p>
+        <button class="mt-2 bg-[#019B7E] text-white text-[11px] px-4 py-2 rounded ">
+          ADD TO BASKET
+        </button>
+      </div>
+      <div class="bg-white mt-5">
+        <img src="/WCTproject/assets/images/image_product2/p10.png" alt="Jack Wolfskin Skyrocket II" class="mb-4 w-full h-[175px]">
+        <h3 class="text-[#019B7E] text-[11px] mb-2">Jack Wolfskin Skyrocket II </h3>
+        <p class="text-black text-sm font-bold">$144.95</p>
+        <button class="mt-2 bg-[#019B7E] text-white text-[11px] px-4 py-2 rounded ">
+          ADD TO BASKET
+        </button>
+      </div>
+      <div class="bg-white mt-5">
+        <img src="/WCTproject/assets/images/image_product2/p11.png" alt="Jack Wolfskin Skyrocket II" class="mb-4 w-full h-[175px] ">
+        <h3 class="text-[#019B7E] text-[11px] mb-2">Jack Wolfskin Skyrocket II </h3>
+        <p class="text-black text-sm font-bold">$144.95</p>
+        <button class="mt-2 bg-[#019B7E] text-white text-[11px] px-4 py-2 rounded ">
+          ADD TO BASKET
+        </button>
+      </div>
+      <div class="bg-white mt-5">
+        <img src="/WCTproject/assets/images/image_product2/p12.png" alt="Jack Wolfskin Skyrocket II" class="mb-4 w-full h-[175px] ">
+        <h3 class="text-[#019B7E] text-[11px] mb-2">Jack Wolfskin Skyrocket II </h3>
+        <p class="text-black text-sm font-bold">$144.95</p>
+        <button class="mt-2 bg-[#019B7E] text-white text-[11px] px-4 py-2 rounded ">
+          ADD TO BASKET
+        </button>
+      </div>
+      <div class="bg-white mt-5">
+        <img src="/WCTproject/assets/images/image_product2/p13.png" alt="Jack Wolfskin Skyrocket II" class="mb-4 w-full h-[175px] ">
+        <h3 class="text-[#019B7E] text-[11px] mb-2">Jack Wolfskin Skyrocket II </h3>
+        <p class="text-black text-sm font-bold">$144.95</p>
+        <button class="mt-2 bg-[#019B7E] text-white text-[11px] px-4 py-2 rounded ">
+          ADD TO BASKET
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="bg-gray-300 py-6 mt-28 text-[#666666] ">
+    <div class="container mx-auto">
+        <nav class="mb-4 ml-10">
+            <div>
+                <a href="#" class="mx-2 hover:text-[#019B7E]">Terms & Conditions</a>
+                <a href="#" class="mx-2 hover:text-[#019B7E]">Privacy Policy</a>
+                <a href="#" class="mx-2 hover:text-[#019B7E]">Returns Policy</a>
+                <a href="#" class="mx-2 hover:text-[#019B7E]">Cookie Policy</a>
+                <a href="#" class="mx-2 hover:text-[#019B7E]">Contact Us</a>
+                <a href="#" class="mx-2 hover:text-[#019B7E]">Facebook</a>
+                <a href="#" class="mx-2 hover:text-[#019B7E]">Instagram</a>
+                <a href="#" class="mx-2 hover:text-[#019B7E]">Ultimate Guide to Camping</a>
+                <a href="#" class="mx-2 hover:text-[#019B7E]">Delivery Charges</a>
+            </div>
+            <div class="flex justify-end space-x-8 mr-10 ">
+                <a href="" class="text-4xl hover:text-[#019B7E]"><i class="fa-brands fa-cc-visa"></i></a>
+                <a href="" class="text-4xl hover:text-[#019B7E]"><i class="fa-brands fa-cc-paypal"></i></a>
+                <a href="" class="text-4xl hover:text-[#019B7E]"><i class="fa-brands fa-cc-mastercard"></i></a>
+            </div>
+            <div>
+                <p class=" ml-2">Copyright 2024 © Camp Haven</p>
+            </div>
+        </nav>
+    </div>
+</footer>
+
+<script>
+    const profileIcon = document.getElementById("profileIcon");
+const profileModal = document.getElementById("profileModal");
+const registrationForm = document.getElementById("registrationForm");
+const signInForm = document.getElementById("signInForm");
+const carousel = document.getElementById("default-carousel");
+
+profileIcon.addEventListener("click", () => {
+  toggleModal("profileModal");
+});
+
+
+
+function toggleModal(modalID) {
+  const modal = document.getElementById(modalID);
+  modal.classList.toggle("hidden");
+
+  // Disable pointer events on the carousel when the modal is open
+  if (!modal.classList.contains("hidden")) {
+    carousel.style.pointerEvents = "none";
+  } else {
+    carousel.style.pointerEvents = "auto";
+  }
+}
+
+function toggleVisibility(event, id) {
+  const element = document.getElementById(id);
+  if (element.classList.contains('hidden')) {
+    element.classList.remove('hidden');
+  } else {
+    element.classList.add('hidden');
+  }
+}
+</script>
+</body>
+</html>
