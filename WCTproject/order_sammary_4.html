@@ -92,21 +92,24 @@
           </label>
         </div>
         <!-- ABA KHQR -->
-        <div class="flex items-center p-7 rounded-br-[3px] border hidden cursor-pointer bg-white shadow-md border-b border-gray-200" 
+        <div
+          class="flex items-center p-7 rounded-br-[3px] border hidden cursor-pointer bg-white shadow-md border-b border-gray-200"
           id="abaKhqr">
           <h2 class="text-sm font-bold">
             ABA KHQR
           </h2>
         </div>
         <!-- Credit/Debit Card -->
-        <div class="flex items-center p-7 bg-white shadow-md border-b border-gray-200 rounded-br-[3px] border hidden cursor-pointer"
+        <div
+          class="flex items-center p-7 bg-white shadow-md border-b border-gray-200 rounded-br-[3px] border hidden cursor-pointer"
           id="creditCard">
           <h2 class="text-sm font-bold">
             Credit/Debit Card
           </h2>
         </div>
         <!-- ABA KHQR Details -->
-        <div class="flex items-center p-7  rounded-br-[3px] hidden bg-white shadow-md border-b border-gray-200" id="abaKhqrDetails">
+        <div class="flex items-center p-7 rounded-br-[3px] hidden bg-white shadow-md border-b border-gray-200"
+          id="abaKhqrDetails">
           <img alt="QR code for ABA KHQR payment" class="mr-4" height="100" src="assets/payment/bakong.png"
             width="100" />
           <h2 class="text-sm font-bold">
@@ -117,8 +120,7 @@
         <div class="flex items-center p-7 rounded-br-[3px] hidden bg-white shadow-md border-b border-gray-200"
           id="creditCardDetails">
           <img alt="Credit/Debit card logo" class="mr-4" height="100"
-            src="https://storage.googleapis.com/a1aa/image/33RYZn3aXe24Xi26RLKGiKkdNaDTyGUleeDQ2jIjnbXBUH0nA.jpg"
-            width="100" />
+            src="assets/payment/Screenshot 2024-12-14 005930.png" width="100" />
           <h2 class="text-sm font-bold">
             Enter your card details to proceed
           </h2>
@@ -128,6 +130,7 @@
           id="completeOrderButton">
           Complete order
         </button>
+
       </div>
 
 
@@ -212,6 +215,24 @@
     </div>
   </footer>
 
+  <!-- Order Completion Popup -->
+  <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden" id="orderCompletionPopup">
+    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+      <img alt="Order completion icon showing a checkmark" class="mx-auto mb-4" height="100"
+        src="https://storage.googleapis.com/a1aa/image/9G7WQQOejZTWYqfdo3oYTihkTFMEFQV3QaUm8aP5aKPTZi6TA.jpg"
+        width="100" />
+      <h2 class="text-2xl font-bold mb-4">
+        Order Completed!
+      </h2>
+      <p class="text-gray-700 mb-4">
+        Thank you for your purchase. Your order has been successfully completed.
+      </p>
+      <button class="bg-[#019b7e] text-white text-sm font-bold rounded-[7px] px-4 py-2" id="closePopupButton">
+        Close
+      </button>
+    </div>
+  </div>
+
   <script>
     document.getElementById('agreementCheckbox').addEventListener('change', function () {
       const abaKhqr = document.getElementById('abaKhqr');
@@ -238,6 +259,14 @@
     document.getElementById('creditCard').addEventListener('click', function () {
       document.getElementById('creditCardDetails').classList.remove('hidden');
       document.getElementById('abaKhqrDetails').classList.add('hidden');
+    });
+
+    document.getElementById('completeOrderButton').addEventListener('click', function () {
+      document.getElementById('orderCompletionPopup').classList.remove('hidden');
+    });
+
+    document.getElementById('closePopupButton').addEventListener('click', function () {
+      document.getElementById('orderCompletionPopup').classList.add('hidden');
     });
   </script>
 </body>
