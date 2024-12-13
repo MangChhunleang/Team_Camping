@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 
 <head>
   <meta charset="UTF-8" />
@@ -25,6 +26,1147 @@
           <input type="text" placeholder="Search products"
             class="w-full py-2 pl-12 pr-4 border-2 border-gray-300 rounded-lg bg-gray-100 text-gray-600 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500" />
           <i class="fas fa-search absolute top-1/2 transform -translate-y-1/2 left-4 text-gray-500"></i>
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloths Detail Product</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/flowbite@1.4.7/dist/flowbite.min.js"
+      defer
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-white">
+    <div class="w-full mx-auto">
+    
+      <header class="flex items-center justify-between p-4 bg-white shadow-md border-b border-gray-200">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <img src="assets/homme/Camphaven.png" alt="Logo" class="w-17 h-12" />
+        </div>
+    
+        <!-- Search Bar -->
+        <div class="flex-grow mx-5 text-lg">
+          <div class="relative">
+            <input type="text" placeholder="Search products"
+              class="w-full py-2 pl-12 pr-4 border-2 border-gray-300 rounded-lg bg-gray-100 text-gray-600 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500" />
+            <i class="fas fa-search absolute top-1/2 transform -translate-y-1/2 left-4 text-gray-500"></i>
+          </div>
+        </div>
+    
+        <!-- User Icon and Basket -->
+        <div class="flex items-center space-x-6 text-lg">
+          <!-- Profile Icon with onclick to toggle modal -->
+          <div class="relative">
+            <!-- <button class="flex items-center justify-center w-[50px] h-10 bg-none-100 rounded-xl text-gray-600 hover:bg-blue-200" onclick="toggleVisibility(event,'dropdown')"> -->
+            <button onclick="toggleVisibility(event,'dropdown')">
+              <div
+                class="relative flex items-center justify-center w-[50px] h-10 bg-none-100 rounded-xl text-gray-600 hover:bg-blue-200  ">
+                <i class="fas fa-user-circle mr-1 text-2xl"></i>
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </button>
+            <!-- Dropdown Menu -->
+            <!-- fixed  bg-gray-900 bg-opacity-50 flex items-center justify-center hidden z-50 -->
+            <div id="dropdown"
+              class="hidden z-50  fixed  left-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-lg group-hover:block ">
+              <div class="p-4 border-b">
+                <div class="flex items-center space-x-3">
+                  <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center">
+                    <i class="far fa-user text-gray-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <p class="font-medium text-gray-800">Miker</p>
+                    <p class="text-sm text-gray-500">View your profile</p>
+                  </div>
+                </div>
+              </div>
+              <div class="py-2">
+                <a href="./myProflie.html"
+                  class="flex items-center px-4 py-2 hover:bg-gray-100 text-gray-800 text-sm">
+                  <i class="fas fa-user-circle"></i>
+    
+                  <span class="ml-3">My profile</span>
+                </a>
+                <a href="./History.html"
+                  class="flex items-center px-4 py-2 hover:bg-gray-100 text-gray-800 text-sm">
+                  <i class="far fa-file-alt w-5"></i>
+                  <span class="ml-3">Purchases History</span>
+                </a>
+              </div>
+              <div class="py-2 border-t">
+    
+                <a href="" class="flex items-center px-4 py-2 hover:bg-gray-100 text-gray-800 text-sm">
+                  <i class="fas fa-sign-out-alt w-5"></i>
+                  <span class="ml-3">Sign out</span>
+                </a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="flex items-center text-gray-700">
+            <span>Basket / $30.00</span>
+            <a href="./checkout1.html">
+              <i class="fas fa-shopping-cart ml-2">
+                <span
+                  class="absolute mr-10  top-4 inline-flex px-2 py-1 text-xs font-bold leading-none text-white bg-red-600 rounded-full">1</span>
+              </i>
+            </a>
+          </div>
+          <button class="px-6 py-2 bg-[#019B7E] text-white rounded-full hover:bg-green-700">
+            CHECKOUT
+          </button>
+        </div>
+      </header>
+        <nav class="bg-white py-2">
+            <div class="flex justify-center space-x-2 text-xs text-white-300 font-semibold tracking-wide">
+                  <div class="relative group">
+                    <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e] ">
+                      TENTS & ACCESSORIES <i class="fas fa-chevron-down text-xs ml-1"></i>
+                    </button>
+                    <div
+                      class="absolute left-0 mt-2 w-[500px] bg-white shadow-lg  border border-gray-200 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300">
+                      <div class="grid grid-cols-4 gap-4 p-6">
+                        <!-- Column 1 -->
+                        <div>
+                          <a class="text-gray-800  font-bold text-[9px] mb-2">TENTS & SHELTERS</a>
+                          <hr class="mt-2">
+                          <ul class="text-gray-600 text-sm space-y-1">
+                            <li><a href="#" class="hover:text-[#019b7e] text-[9px] ">1 Man Tents</a></li>
+                            <hr class="mt-2">
+                            <li><a href="#" class="hover:text-[#019b7e] text-[9px]">2 Man Tents</a></li>
+                            <hr class="mt-2">
+                            <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >3 Man Tents</a></li>
+                            <hr class="mt-2">
+                            <li><a href="#" class="hover:text-[#019b7e] text-[9px]">4 Man Tents</a></li>
+                            <hr class="mt-2">
+                            <li><a href="#" class="hover:text-[#019b7e] text-[9px]">Family Tents - Poled</a></li>
+                            <hr class="mt-2">
+                            <li><a href="#" class="hover:text-[#019b7e] text-[9px]">Family Tents - Air</a></li>
+                            <hr class="mt-2">
+                            <li><a href="#" class="hover:text-[#019b7e] text-[9px]">Blackout Tents</a></li>
+                            <hr class="mt-2">
+                            <li><a href="#" class="hover:text-[#019b7e] text-[9px]">Utility Tents</a></li>
+                            <hr class="mt-2">
+                            <li><a href="#" class="hover:text-[#019b7e] text-[9px]">Shelters</a></li>
+                          </ul>
+                        </div>
+                        <!-- Column 2 -->
+                        <div>
+                          <a class="text-gray-800 font-bold  mb-2 text-[9px]">AWNINGS </a>
+                          <hr class="mt-2">
+                          <ul class="text-gray-600 text-sm space-y-1">
+                            <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">Awnings - Poled</a> </li>
+                            <hr class="mt-2">
+                            <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">Awnings - Air</a></li>
+                          </ul>
+                        </div>
+                        <!-- Column 3 -->
+                        <div>
+                          <a class="text-gray-800 font-bold  mb-2 text-[9px]">ACCESSORIES</a>
+                          <hr class="mt-2">
+                          <ul class="text-gray-600 text-sm space-y-1">
+                            <li><a href="#" class="hover:text-[#019b7e] text-[9px]">Windbreaks</a></li>
+                            <hr class="mt-2">
+                            <li><a href="#" class="hover:text-[#019b7e] text-[9px]">Pegs & Poles</a></li>
+                            <hr class="mt-2">
+                            <li><a href="#" class="hover:text-[#019b7e] text-[9px]">Footprints & Carpets</a></li>
+                            <hr class="mt-2">
+                            <li><a href="#" class="hover:text-[#019b7e] text-[9px]">Groundsheets & Tarps</a></li>
+                            <hr class="mt-2">
+                            <li><a href="#" class="hover:text-[#019b7e] text-[9px]">Tent Care & Repair</a></li>
+                            <hr class="mt-2">
+                            <li><a href="#" class="hover:text-[#019b7e] text-[9px]">Tent Accessories</a></li>
+                          </ul>
+                        </div>
+                        <!-- Column 4 -->
+                        <div>
+                          <h4 class="text-gray-800 font-bold  mb-2 text-[9px]">TOILETS&ACCESSORIES</h4>
+                          <hr class="mt-2">
+                          <ul class="text-gray-600 text-sm space-y-1">
+                            <li><a href="#" class="hover:text-[#019b7e] text-[9px]">Utility Tents</a></li>
+                            <hr class="mt-2">
+    
+                            <li><a href="#" class="hover:text-[#019b7e] text-[9px]">Toilets</a></li>
+                            <hr class="mt-2">
+                            <li><a href="#" class="hover:text-[#019b7e] text-[9px]">Toilet Chemicals</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              
+              <div class="relative group">
+                <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e]">
+                  SLEEPING <i class="fas fa-chevron-down text-xs ml-1"></i>
+                </button>
+                <div
+                class="absolute left-0 mt-2 w-[420px] bg-white shadow-lg rounded-md border border-gray-200 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300">
+                  <div class="grid grid-cols-4 gap-3 p-6 justify-center ">
+                    <!-- Column 1 -->
+                    <div>
+                      <a class="text-gray-800 font-bold  text-[9px] mb-2">SLEEPING</a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px] ">SLEEPING BAGS SINGLE</a></li>
+                        <hr class="mt-2 ">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">SELEEPING BAGS DOUBLE</a></li>
+                       
+                      </ul>
+                    </div>
+                    <!-- Column 2 -->
+                    <div>
+                      <a class="text-gray-800 font-bold  mb-2 text-[9px]">BEDS </a>
+                      <hr class="mt-2 ">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">CAMP  BEDS</a> </li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">AIRBEDS</a></li>
+                        <hr class="mt-2 ">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">SELF INFLATING MATS</a></li>
+                        <hr class="mt-2 ">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">FOAM ROLL MATS</a></li>
+                        
+                      </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div>
+                      <a class="text-gray-800  font-bold  mb-2 text-[9px]">ACCESSORIES</a>
+                      <hr class="mt-2 ">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">PILLOWS</a></li>
+                        <hr class="mt-2 ">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">NETS & LINERS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">AIR PUMPS</a></li>
+                        <hr class="mt-2 ">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">BLANKETS</a></li>
+                        
+                      </ul>
+                    </div>
+                   
+                    
+                  </div>
+                </div>
+              </div>
+             
+    
+    
+              <div class="relative group">
+                <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e] ">
+                  KITCHEN <i class="fas fa-chevron-down text-xs ml-1"></i>
+                </button>
+                <div
+                  class="absolute left-0 mt-2 w-[500px] bg-white shadow-lg rounded-md border border-gray-200 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300">
+                  <div class="grid grid-cols-4 gap-4 p-6">
+                    <!-- Column 1 -->
+                    <div>
+                      <a class="text-gray-800 font-bold  text-[9px] mb-2 ">STOVES</a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px] ">SINGLE BURNER STOVES</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">DOUBLE BURNER STOVES</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >REGULATORS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">SPARES -GAS & PETROL</a></li>
+                        <a class="text-gray-800 font-bold text-[9px] mt-2 mb-2">BBQ'S</a>
+                        
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">BBQS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">BBQ ACCESSORIES</a></li>
+                        
+                      </ul>
+                    </div>
+                    <!-- Column 2 -->
+                    <div>
+                      <a class="text-gray-800 font-bold  mb-2text-[9px]">FUEL </a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">GAS CARIRTDGES</a> </li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">SOLID FUELS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">LIQUID FUELS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">LIGHTERS & MATCHES</a></li>
+                       
+                      </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div>
+                      <a class="text-gray-800   mb-2 text-[9px] font-bold">OTHER</a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">PICNIC</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">HOUSEHOLD</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">GENERAL CLEANING</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">TABLEWARE</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">240V APPLIANCES</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">12V APPLIANCES</a></li>
+                      </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div>
+                      <h4 class="text-gray-800  mb-2 text-[9px] font-bold">STORAGE & PREP</h4>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">KITCHEN & STORAGE</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">FRIDES & UTENSILS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">POTS PANS & UTENSILS</a></li>
+                        <hr class="mt-2">
+                      <li><a href="#" class="hover:text-[#019b7e] text-[9px]">BOTTLES & FLASKS</a></li>
+                      <hr class="mt-2">
+                      <li><a href="#" class="hover:text-[#019b7e] text-[9px]">WATER CARRIERS</a></li>
+                      <hr class="mt-2">
+                      <li><a href="#" class="hover:text-[#019b7e] text-[9px]">FOOD STORAGE & PREP</a></li>
+                      </ul>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+    
+              <div class="relative group">
+                <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e] ">
+                  LIGHT & LANTERNS <i class="fas fa-chevron-down text-xs ml-1"></i>
+                </button>
+                <div
+                  class="absolute left-0 mt-2 w-[420px] bg-white shadow-lg rounded-md border border-gray-200 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300">
+                  <div class="grid grid-cols-3 gap-4 p-6">
+                    <!-- Column 1 -->
+                    <div>
+                      <a class="text-gray-800 font-bold text-[9px] mb-2 ">TORCHES & LANTERNS</a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px] ">HEAD TORCHES</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">LANTERNS BATTERY</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >LANTERNS-GAS & FUEL</a></li>
+                        
+                        
+                      </ul>
+                    </div>
+                    <!-- Column 2 -->
+                    <div>
+                      <a class="text-gray-800 font-bold  mb-2 text-[9px]">HEATING </a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">HEATING-ELECTRIC</a> </li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">HEATING-GAS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">HEATING-SOLID FUEL</a></li>
+                       
+                      </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div>
+                      <a class="text-gray-800   mb-2 text-[9px] font-bold">DEHER LIGHTING</a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px] ">LIGHTING-12V</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">LIGHTERS-240V</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">SPARES GAS & PETROL</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+    
+              <div class="relative group">
+                <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e] ">
+                  FURNITURE <i class="fas fa-chevron-down text-xs ml-1"></i>
+                </button>
+                <div
+                  class="absolute left-0 mt-2 w-[210px] bg-white shadow-lg rounded-md border border-gray-200 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300">
+                  <div class="grid grid-cols-1 gap-4 p-6">
+                    <!-- Column 1 -->
+                    <div>
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px] ">STATING</a></li>
+                        <hr>
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">TABLES</a></li>
+                        <hr>
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >KITCHEN & STOTSGE</a></li>
+                        <hr>
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">CAMP BEDS</a></li>
+                     
+                        
+                      </ul>
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
+    
+    
+              <div class="relative group">
+                <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e] ">
+                  CLOTHING <i class="fas fa-chevron-down text-xs ml-1"></i>
+                </button>
+                <div
+                  class="absolute left-0 mt-2  w-[500px] bg-white shadow-lg rounded-md border border-gray-200 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300 ">
+                  <div class="grid grid-cols-4 gap-4 p-6">
+                    <!-- Column 1 -->
+                    <div>
+                      <a class="text-gray-800 font-bold  text-[9px] mb-2 ">MENT</a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px] ">JACKETS-MENS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">WATERPROOFS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >FLEECE $ SWEAT-MENS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >BASE LAYER</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >TROUSERS & SHIRTS-MENS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >T-SHIRTS & SHIRTS-MENS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >SWIMWEAR-MENS</a></li>
+                       
+    
+                        
+                        
+                      </ul>
+                    </div>
+                    <!-- Column 2 -->
+                    <div>
+                      <a class="text-gray-800 font-bold  mb-2 text-[9px]">WOMEN </a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">JACKETS-WOMENS</a> </li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">WAITERPROOFS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">FLEECE & SWEAT-WOMENS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">BASELAYER-WOMENS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">TROUSERS & SHORTS-WOMEN</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">T-SHIRTS & TOPS-WOMENS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">SWIMWEAR-WOMENS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">GYMWEAR-WOMENS</a></li>
+            
+                       
+                      </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div>
+                      <a class="text-gray-800   mb-2 text-[9px] font-bold">KIDS</a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px] ">JEACK-KIDS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">WATERPROOFS-KIDS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">FLEECE & SWEAT-KIDS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">TROUSERS & SH.KIDS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">T-SHIRTS-KIDS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">SWIMWEAR-KIDS</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <a class="text-gray-800   mb-2 text-[9px] font-bold">ACCESSORIES</a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px] ">GLOVES-ALL</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">HATS-SUMMER</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">HATS-WINTER</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">SCRAVES & NECK TUBES</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">BELTS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">UMBRELLAS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">CARE & ACCESSORIES</a></li>
+                        <hr class="mt-2">
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+    
+    
+    
+    
+              <div class="relative group">
+                <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e] ">
+                  FOOTWEAR <i class="fas fa-chevron-down text-xs ml-1"></i>
+                </button>
+                <div
+                  class="absolute left-0 mt-2  w-[500px] bg-white shadow-lg rounded-md border border-gray-200 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300 ">
+                  <div class="grid grid-cols-4 gap-4 p-6">
+                    <!-- Column 1 -->
+                    <div>
+                      <a class="text-gray-800 font-bold text-[9px] mb-2 ">MENS</a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px] ">WALKING SHOES - MENS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">WALKING BOOTS - MENS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >WELLINGTONS - MENS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >SANDALS - MENS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >SOCKS & INSOLES - MENS</a></li>
+    
+                        
+                        
+                      </ul>
+                    </div>
+                    <!-- Column 2 -->
+                    <div>
+                      <a class="text-gray-800 font-bold  mb-2 text-[9px]">WOMENS </a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">WALKING SHOES - WMNS</a> </li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">WALKING BOOTS - WMNS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">WELLINGTONS - WMNS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">SANDALS - WMNS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">SOCKS & INSOLES - WMNS</a></li>
+                       
+                       
+                      </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div>
+                      <a class="text-gray-800   mb-2 text-[9px] font-bold">KIDS</a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px] ">WELLINGTONS - KIDS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">SANDALS - KIDS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">SOCKS & INSOLES - KIDS</a></li>
+                      
+                      </ul>
+                    </div>
+                    <div>
+                      <a class="text-gray-800   mb-2 text-[9px] font-bold">ALL</a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px] ">OTHER FOOTWEAR</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">FOOTWEAR CARE</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">GAITERS</a></li>
+                      
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+    
+    
+    
+    
+              <div class="relative group">
+                <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e] ">
+                  RUCKSACKS & BAGS <i class="fas fa-chevron-down text-xs ml-1"></i>
+                </button>
+                <div
+                  class="absolute left-0 mt-2  w-[470px] bg-white shadow-lg rounded-md border border-gray-200 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300">
+                  <div class="grid grid-cols-4 gap-4 p-6">
+                    <!-- Column 1 -->
+                    <div>
+                      <a class="text-gray-800 font-bold  text-[9px] mb-2 ">RUCKSACKS</a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px] ">DAY BACK PACKS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">LARGER RUCKSACKS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >RAIN COVERS</a></li>
+                      
+                        
+                        
+                      </ul>
+                    </div>
+                    <!-- Column 2 -->
+                    <div>
+                      <a class="text-gray-800 font-bold  mb-2 text-[9px]">BAGS </a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">BOOT BAGS</a> </li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">DRY BAGS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">OTHER BAGS</a></li>
+                      
+                      </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div>
+                      <a class="text-gray-800   mb-2 text-[9px] font-bold">ACCESSORIES</a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px] ">BELT BAGS & WALLETS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">HYDRATION PACKS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">WASH BAGS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">TRAVEL ACCESSORIES</a></li>
+                     
+                      </ul>
+                    </div>
+                
+                  </div>
+                </div>
+              </div>
+    
+    
+    
+    
+              <div class="relative group">
+                <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e] ">
+                  HIKING <i class="fas fa-chevron-down text-xs ml-1"></i>
+                </button>
+                <div
+                  class="absolute left-0 mt-2  w-[210px] bg-white shadow-lg rounded-md border border-gray-200 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300">
+                  <div class="grid grid-cols-1 gap-4 p-6">
+                    <!-- Column 1 -->
+                    <div>
+                     
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px] ">HIKE POLES & STICKS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">BOOKS & GUIDES</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >MAPS & CASES</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >MAP READING TOOLS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >BINOCULARS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >NOURISHMENT</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >INSECT REPELLENTS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >SURVIVAL</a></li>
+                       
+                      </ul>
+                    </div>
+                  
+                  
+                  </div>
+                </div>
+              </div>
+    
+    
+    
+    
+        
+    
+    
+    
+    
+              <div class="relative group">
+                <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e]  ">
+                  EVERYTHING ELSE <i class="fas fa-chevron-down text-xs ml-1"></i>
+                </button>
+                <div
+                  class="absolute left-1/2 mt-2 hidden  w-[640px] bg-white shadow-lg rounded-md border border-gray-200 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:block transform -translate-x-1/2 transition-opacity duration-300">
+                  <div class="grid grid-cols-4 gap-4 p-6">
+                    <!-- Column 1 -->
+                    <div>
+                      <a class="text-gray-800 font-bold  text-[9px] mb-2 ">ELECTRICAL</a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px] ">HOOKUP LEADS & PLUGS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">BATTERIES</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]" >12V ACCESSORIES</a></li>
+                       
+                        
+                      </ul>
+                    </div>
+                    <!-- Column 2 -->
+                    <div>
+                      <a class="text-gray-800 font-bold  mb-2 text-[9px]">LEISURE </a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">WATER SPORTS</a> </li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">CYCLING</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">TOYS-INDOOR</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">TOYS-OUTDOOR</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">FISHING EQUIPMENT</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e]  text-[9px]">POOLS & SPAS</a></li>
+                       
+                       
+                      </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div>
+                      <a class="text-gray-800   mb-2 text-[9px] font-bold">CARAVAN & MOTORHOME</a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px] ">CLEANING & SERVICING</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">CARAVAN & MOTORHOME EXTERIOR</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">CARAVAN & MOTORHOME INTERIOR</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">CARAVAN STEPS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">PLUMBING</a></li>
+                      
+                      </ul>
+                    </div>
+                    <div>
+                      <a class="text-gray-800   mb-2 text-[9px] font-bold">OTHER</a>
+                      <hr class="mt-2">
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px] ">D.I.Y ITEMS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">GIFT & HOME</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">MOTORING</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">FIRST AID</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">PERSONAL ITEMS</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">PET CARE</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">WILDLIFE CARE</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">SECURITY</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">STORAGE</a></li>
+                        <hr class="mt-2">
+                        <li><a href="#" class="hover:text-[#019b7e] text-[9px]">TOOLS</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </nav>
+      <nav class="mx-24">
+        <h2 class="uppercase text-gray-600">
+          Home / CLOTHING / Jackets - Mens
+        </h2>
+      </nav>
+      <div>
+        <div
+          class="flex flex-col justify-around gap-20 md:flex-row bg-white shadow-xl rounded-lg mx-auto mt-10 max-w-6xl"
+        >
+          <!-- Image Carousel -->
+          <div class="md:w-1/2 p-4">
+            <div id="carousel" class="relative" data-carousel="static">
+              <!-- Carousel wrapper -->
+              <div
+                class="relative h-[300px] overflow-hidden rounded-lg border-2 border-gray-300"
+              >
+                <!-- Items -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="./assets/clothing/clothsDeltail/clothsDeltail1.png"
+                    class="block w-full h-[300px] object-contain"
+                    alt="Tent Image 1"
+                  />
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="./assets/clothing/clothsDeltail/clothsDeltail2.png"
+                    class="block w-full h-[300px] object-contain"
+                    alt="Tent Image 2"
+                  />
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="./assets/clothing/clothsDeltail/clothsDeltail3.png"
+                    class="block w-full h-[300px] object-contain"
+                    alt="Tent Image 3"
+                  />
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="./assets/clothing/clothsDeltail/clothsDeltail4.png"
+                    class="block w-full h-[300px] object-contain"
+                    alt="Tent Image 4"
+                  />
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="./assets/clothing/clothsDeltail/clothsDeltail5.png"
+                    class="block w-full h-[300px] object-contain"
+                    alt="Tent Image 5"
+                  />
+                </div>
+                <!-- Add more images as necessary -->
+              </div>
+
+              <!-- Slider controls -->
+              <button
+                type="button"
+                class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 group focus:outline-none"
+                data-carousel-prev
+              >
+                <span
+                  class="inline-flex items-center justify-center w-8 h-8 bg-white border border-gray-400 rounded-full"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="w-5 h-5 text-gray-800"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 19l-7-7 7-7"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+              <button
+                type="button"
+                class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 group focus:outline-none"
+                data-carousel-next
+              >
+                <span
+                  class="inline-flex items-center justify-center w-8 h-8 bg-white border border-gray-400 rounded-full"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="w-5 h-5 text-gray-800"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Details -->
+          <div class="md:w-1/2 p-6">
+            <h2 class="text-2xl font-bold text-gray-800">
+              Jack Wolfskin Taubenberg 3 in 1 Jacket Safflower
+            </h2>
+            <p class="text-lg text-black font-semibold mt-2">$15.00</p>
+            <p class="text-sm text-[#019B7E] mt-1">In stock</p>
+            <div class="flex gap-24">
+              <div class="mt-4">
+                <label
+                  for="size"
+                  class="block text-sm font-medium text-gray-700"
+                >
+                  Size
+                </label>
+                <select
+                  id="size"
+                  name="size"
+                  class="block mt-5 border-2 px-4 py-1 border-gray-500 shadow-sm items-center"
+                >
+                  <option value="No Size">M</option>
+                  <option value="Small">L</option>
+                  <option value="Medium">XL</option>
+                  <option value="Large">XXL</option>
+                </select>
+              </div>
+
+              <div class="mt-4 items-center">
+                <h2 class="block text-sm font-medium text-gray-700">
+                  Quantity
+                </h2>
+                <div
+                  class="flex items-center justify-center text-black mt-5 border-2 border-gray-500"
+                >
+                  <button id="decrement" class="px-3 py-1 rounded-l">-</button>
+                  <span id="quantity" class="px-3 py-1">1</span>
+                  <button id="increment" class="px-3 py-1 rounded-r">+</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 flex gap-20">
+              <button
+                class="px-4 py-2 text-white bg-[#019B7E] rounded-md hover:bg-green-700 focus:ring-2 focus:ring-[#019B7E] focus:outline-none"
+              >
+                Add to Basket
+              </button>
+              <button
+                class="px-4 py-2 text-white bg-[#019B7E] rounded-md hover:bg-green-700 focus:ring-2 focus:ring-[#019B7E] focus:outline-none"
+              >
+                Ask a Question
+              </button>
+            </div>
+            <p class="mt-4 text-xs text-gray-500">SKU: 330068</p>
+          </div>
+        </div>
+        <div class="bg-white mt-3">
+          <div class="flex justify-center w-full mt-4">
+            <h2
+              class="rounded-2xl border-2 uppercase font-bold text-[#019B7E] border-[#019B7E] px-5"
+            >
+              Description
+            </h2>
+          </div>
+          <div class="mx-3 mt-2">
+            <h2 class="text-xl">Product Description</h2>
+            <p class="text-gray-700 text-sm mt-1">
+              The TAUBENBERG 3IN1 jacket is a must-have addition to your outdoor
+              wardrobe. The inner jacket is made of warm POLARTEC 200, a
+              classic, hard wearing fleece that is made almost entirely from
+              recycled synthetic fibre.
+            </p>
+            <p class="text-gray-700 text-sm mt-3">
+              The outer jacket is cut from waterproof, windproof and breathable
+              TEXAPORE CORE. It has a sporty, colour block design and is
+              equipped with a water resistant zip. The hood and hem are fully
+              adjustable. There's room for your map, muesli bar and other hiking
+              essentials in the two hand pockets and the inner pocket.
+            </p>
+            <p class="text-gray-700 mt-3">
+              3-in-1 jacket waterproof, windproof <br />
+              breathable <br />
+              robust <br />
+              with hood <br />
+              warm fleece inner jacket <br />
+              made of recycled materials
+            </p>
+          </div>
+        </div>
+        <div class="container w-full mx-auto py-8 px-16 mt-5">
+          <div class="relative">
+            <!-- Left Button -->
+            <button
+              id="prevButton"
+              class="absolute left-0 top-1/3 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full transition-transform duration-200 ease-out"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <!-- Carousel Items Wrapper -->
+            <div
+              id="carouselItems"
+              class="flex overflow-x-auto space-x-4 transition-all duration-500"
+            >
+              <!-- Item 1 -->
+              <div class="min-w-[200px]">
+                <img
+                  alt="Woman wearing a long green jacket"
+                  class="w-full"
+                  height="300"
+                  src="./assets/scrollTent/Tent1.png"
+                  width="200"
+                />
+                <div class="text-center mt-2">
+                  <p class="text-sm">2 Man Tent - MH100</p>
+                  <p class="text-black font-bold">$39.00</p>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="min-w-[200px]">
+                <img
+                  alt="Woman wearing a velour fleece in red"
+                  class="w-full"
+                  height="300"
+                  src="./assets/scrollTent/Tent2.png"
+                  width="200"
+                />
+                <div class="text-center mt-2">
+                  <p class="text-sm">2 person pop-up tent - 2 Seconds</p>
+                  <p class="text-black font-bold">$75.00</p>
+                </div>
+              </div>
+              <!-- Item 3 -->
+              <div class="min-w-[200px]">
+                <img
+                  alt="Man wearing a hybrid jacket in black and green"
+                  class="w-full"
+                  height="300"
+                  src="./assets/scrollTent/Tent3.png"
+                  width="200"
+                />
+                <div class="text-center mt-2">
+                  <p class="text-sm">Camping Tent MH100 - 3-P - Fresh&Black</p>
+                  <p class="text-black font-bold">$75.00</p>
+                </div>
+              </div>
+              <!-- Item 4 -->
+              <div class="min-w-[200px]">
+                <img
+                  alt="Man wearing a full zip fleece in navy blue"
+                  class="w-full"
+                  height="300"
+                  src="./assets/scrollTent/Tent4.png"
+                  width="200"
+                />
+                <div class="text-center mt-2">
+                  <p class="text-sm">Camping tent - 2 SECONDS - 3-person</p>
+                  <p class="text-black font-bold">$85.00</p>
+                </div>
+              </div>
+              <!-- Item 5 -->
+              <div class="min-w-[200px]">
+                <img
+                  alt="Woman wearing a waterproof changing robe in pink"
+                  class="w-full"
+                  height="300"
+                  src="./assets/scrollTent/Tent5.png"
+                  width="200"
+                />
+                <div class="text-center mt-2">
+                  <p class="text-sm">
+                    Camping tent 2 Seconds - 2-Person - Fresh&Black
+                  </p>
+                  <p class="text-black font-bold">$99.00</p>
+                </div>
+              </div>
+              <!-- Item 6 -->
+              <div class="min-w-[200px]">
+                <img
+                  alt="Person wearing a fleece lined changing robe in black"
+                  class="w-full"
+                  height="300"
+                  src="./assets/scrollTent/Tent6.png"
+                  width="200"
+                />
+                <div class="text-center mt-2">
+                  <p class="text-sm">
+                    Camping tent 2 Seconds - 2-Person - Fresh&Black
+                  </p>
+                  <p class="text-black font-bold">$129.00</p>
+                </div>
+              </div>
+              <div class="min-w-[200px]">
+                <img
+                  alt="Woman wearing a long green jacket"
+                  class="w-full"
+                  height="300"
+                  src="./assets/scrollTent/Tent7.png"
+                  width="200"
+                />
+                <div class="text-center mt-2">
+                  <p class="text-sm">
+                    Camping tent 2 Seconds Easy - 2-Person - Fresh&Black
+                  </p>
+                  <p class="text-black font-bold">$125.00</p>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="min-w-[200px]">
+                <img
+                  alt="Woman wearing a velour fleece in red"
+                  class="w-full"
+                  height="300"
+                  src="./assets/scrollTent/Tent8.png"
+                  width="200"
+                />
+                <div class="text-center mt-2">
+                  <p class="text-sm">
+                    Camping Tent with Poles Arpenaz 4.1 F&B 4 Persons 1 Bedroom
+                  </p>
+                  <p class="text-black font-bold">$249.00</p>
+                </div>
+              </div>
+              <!-- Item 3 -->
+              <div class="min-w-[200px]">
+                <img
+                  alt="Man wearing a hybrid jacket in black and green"
+                  class="w-full"
+                  height="300"
+                  src="./assets/scrollTent/Tent9.png"
+                  width="200"
+                />
+                <div class="text-center mt-2">
+                  <p class="text-sm">
+                    Inflatable Camping Tent Air Seconds 4.1 F&B 4 Person 1
+                    Bedroom
+                  </p>
+                  <p class="text-black font-bold">$399.00</p>
+                </div>
+              </div>
+              <!-- Item 4 -->
+              <div class="min-w-[200px]">
+                <img
+                  alt="Man wearing a full zip fleece in navy blue"
+                  class="w-full"
+                  height="300"
+                  src="./assets/scrollTent/Tent10.png"
+                  width="200"
+                />
+                <div class="text-center mt-2">
+                  <p class="text-sm">
+                    Camping Tent MH100 - 2-Person - Fresh&Black
+                  </p>
+                  <p class="text-black font-bold">$59.00</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Button -->
+            <button
+              id="nextButton"
+              class="absolute right-0 top-1/3 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full transition-transform duration-200 ease-out"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+>>>>>>> 789a4620f868599825cd5686c1936a4b736614d7
         </div>
       </div>
 
