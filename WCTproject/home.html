@@ -95,7 +95,7 @@
     </header>
       <nav class="bg-white py-2">
           <div class="flex justify-center space-x-2 text-xs text-white-300 font-semibold tracking-wide">
-                <div class="relative group">
+                <div class="relative group z-10">
                   <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e] ">
                     TENTS & ACCESSORIES <i class="fas fa-chevron-down text-xs ml-1"></i>
                   </button>
@@ -171,7 +171,7 @@
                   </div>
                 </div>
             
-            <div class="relative group">
+            <div class="relative group z-10">
               <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e]">
                 SLEEPING <i class="fas fa-chevron-down text-xs ml-1"></i>
               </button>
@@ -227,7 +227,7 @@
            
   
   
-            <div class="relative group">
+            <div class="relative group z-10">
               <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e] ">
                 KITCHEN <i class="fas fa-chevron-down text-xs ml-1"></i>
               </button>
@@ -311,7 +311,7 @@
             </div>
   
   
-            <div class="relative group">
+            <div class="relative group z-10">
               <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e] ">
                 LIGHT & LANTERNS <i class="fas fa-chevron-down text-xs ml-1"></i>
               </button>
@@ -362,7 +362,7 @@
             </div>
   
   
-            <div class="relative group">
+            <div class="relative group z-10">
               <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e] ">
                 FURNITURE <i class="fas fa-chevron-down text-xs ml-1"></i>
               </button>
@@ -389,7 +389,7 @@
             </div>
   
   
-            <div class="relative group">
+            <div class="relative group z-10">
               <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e] ">
                 CLOTHING <i class="fas fa-chevron-down text-xs ml-1"></i>
               </button>
@@ -490,7 +490,7 @@
   
   
   
-            <div class="relative group">
+            <div class="relative group z-10">
               <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e] ">
                 FOOTWEAR <i class="fas fa-chevron-down text-xs ml-1"></i>
               </button>
@@ -567,7 +567,7 @@
   
   
   
-            <div class="relative group">
+            <div class="relative group z-10">
               <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e] ">
                 RUCKSACKS & BAGS <i class="fas fa-chevron-down text-xs ml-1"></i>
               </button>
@@ -625,7 +625,7 @@
   
   
   
-            <div class="relative group">
+            <div class="relative group z-10">
               <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e] ">
                 HIKING <i class="fas fa-chevron-down text-xs ml-1"></i>
               </button>
@@ -668,7 +668,7 @@
   
   
   
-            <div class="relative group">
+            <div class="relative group z-10">
               <button class=" font-semibold text-[10px] focus:outline-none hover:text-[#019b7e]  ">
                 EVERYTHING ELSE <i class="fas fa-chevron-down text-xs ml-1"></i>
               </button>
@@ -759,7 +759,7 @@
         </nav>
     <div id="default-carousel" class="relative w-full" data-carousel="slide">
       <!-- Carousel wrapper -->
-      <div class="relative m-2 overflow-hidden rounded-lg md:h-[480.11px] ">
+      <div class="relative z-0 m-2 overflow-hidden rounded-lg md:h-[480.11px] ">
         <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img src="assets/homme/download (1).jpg"
@@ -954,13 +954,12 @@
           <img src="assets/everthing_else/Other.webp" alt="Everything Else"
             class="w-full h-full object-cover rounded-lg group-hover:brightness-75 transition duration-300">
           <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 rounded-lg">
-            <span
-              class="text-white font-bold text-lg group-hover:scale-110 transition-transform duration-300">EVERYTHING
+            <span class="text-white font-bold text-lg group-hover:scale-110 transition-transform duration-300">EVERYTHING
               ELSE</span>
           </div>
         </div>
       </a>
-
+      
     </div>
 
 
@@ -1178,11 +1177,10 @@
             <label class="text-sm" for="stay-signed-in">Stay signed in</label>
             <a href="#" class="ml-auto text-sm text-gray-500">Forgot your password?</a>
           </div>
-          <button class="w-full bg-black text-white rounded py-2 mb-4"
-            onclick="window.location.href='./homelogin.html'">
+          <button class="w-full bg-black text-white rounded py-2 mb-4">
             Sign in
           </button>
-
+          <a href="#" class="block text-center text-sm text-gray-500 mb-4">Trouble signing in?</a>
         </form>
 
         <div class="flex items-center justify-center mb-4">
